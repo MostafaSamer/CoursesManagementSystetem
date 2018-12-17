@@ -9,6 +9,7 @@ public class Person implements Serializable, ILogin {
     private String Pass;
     private double SSN;
     private int age;
+    FileManger FManger = new FileManger();
 
     public String getName() {
         return Name;
@@ -63,7 +64,7 @@ public class Person implements Serializable, ILogin {
     }
 
     @Override
-    public boolean Login(String name, String pass) {
+    public boolean Login(int ID, String pass) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }
