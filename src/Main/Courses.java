@@ -11,6 +11,9 @@ public class Courses {
     //Attributes
     public String name;
     public int code;
+    private Double price;
+    private Double grade;
+
 
     //Constructors
     public Courses() {
