@@ -1,15 +1,31 @@
 package GUI_fx;
 
 import javafx.application.*;
+import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.scene.control.PasswordField;
+import javafx.scene.control.TextField;
 import javafx.stage.*;
-
-import java.io.FileNotFoundException;
 import java.io.IOException;
+import GUI_Imp.*;
 
 public class LogIn extends Application {
+
+    @FXML
+    public TextField idEnter;
+    public PasswordField passEnter;
+    public Button btnEnter;
+
+    public void logInClicked() {
+        try {
+            new logIN().ILOGIN(Integer.parseInt(idEnter.getText()), passEnter.getText().toString());
+        } catch (NumberFormatException e) {
+            // IF ID Was not a Number
+        }
+    }
 
     public static void main(String[] args) {
         launch(args);
@@ -27,6 +43,5 @@ public class LogIn extends Application {
         } catch (IOException e) {
             System.out.println("File Not Found");
         }
-
     }
 }
