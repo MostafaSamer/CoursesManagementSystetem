@@ -6,6 +6,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.Dialog;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.stage.*;
@@ -21,9 +22,13 @@ public class LogIn extends Application {
 
     public void logInClicked() {
         try {
-            new logIN().ILOGIN(Integer.parseInt(idEnter.getText()), passEnter.getText().toString());
+            if(!new logIN().ILOGIN(Integer.parseInt(idEnter.getText()), passEnter.getText().toString())) {
+                //User Not Found
+                System.out.println("User Not Found");
+            }
         } catch (NumberFormatException e) {
             // IF ID Was not a Number
+            System.out.println("Number Error");
         }
     }
 

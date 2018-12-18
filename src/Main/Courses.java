@@ -6,7 +6,7 @@ import java.util.Date;
 public class Courses {
     
     FileManger FManger = new FileManger();
-    private final String courseFileName = "Courses.bin";
+    private final String courseFileName = "Files/Courses.bin";
     private static ArrayList<Courses> courses;
 
     //Attributes

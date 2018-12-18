@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class Student extends Person {
 
-    private final String studentFileName = "Student.bin";
+    private final String studentFileName = "Files/Student.bin";
     private static ArrayList<Student> student;
 
     //Attributes

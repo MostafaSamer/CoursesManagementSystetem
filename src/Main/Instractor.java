@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class Instractor extends Person {
 
-    private final String insteractorFileName = "Instractor.bin";
+    private final String insteractorFileName = "Files/Instractor.bin";
     private static ArrayList<Instractor> instractors;
 
     //Attributes
