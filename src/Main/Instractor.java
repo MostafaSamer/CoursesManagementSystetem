@@ -1,28 +1,29 @@
 package Main;
 
-import java.util.ArrayList;
+import java.io.Serializable;
+import java.util.Hashtable;
 
-public class Instractor extends Person {
+public class Instractor extends Person implements Serializable {
 
     private final String insteractorFileName = "Files/Instractor.bin";
-    private static ArrayList<Instractor> instractors;
+    private static Hashtable<Integer, Instractor>  instractors;
 
     //Attributes
     public Double Salary;
 
     //Constructors
     public Instractor() {
-        instractors = new ArrayList<>();
+        instractors = new Hashtable<Integer, Instractor>();
     }
 
     public Instractor(String name, int ID, String pass, double SSN, int age, Double salary) {
-        instractors = new ArrayList<>();
         this.setName(name);
         this.setID(ID);
         this.setPass(pass);
         this.setSSN(SSN);
         this.setAge(age);
         this.setSalary(salary);
+        instractors = new Hashtable<Integer, Instractor>();
     }
 
     //Setter & Getter
@@ -43,32 +44,16 @@ public class Instractor extends Person {
 
     public void LoadFromFile() {
 
-        instractors = (ArrayList<Instractor>) FManger.read(insteractorFileName);
+        instractors = (Hashtable<Integer, Instractor> ) FManger.read(insteractorFileName);
 
     }
 
     //Methods
-    public int GetInstractor(int ID) {
-
-        for (int i = 0; i < instractors.size(); i++)
-        {
-            if(instractors.get(i).getID() == (ID)) {
-                return i;
-            }
-        }
-
-        return -1;
-
-    }
-
     public boolean AddInstractor () {
 
         LoadFromFile();
-        int index = GetInstractor(this.getID());
-        Exception myex = new Exception();
-        if(index == -1) {
-            instractors.add(this);
-            return CommitToFile();
+        if (instractors.get(this.getID()) != null) {
+            instractors.put(this.getID(), this);
         }
         return false;
 
@@ -77,9 +62,8 @@ public class Instractor extends Person {
     public boolean UpdateInstractor (int ID) {
 
         LoadFromFile();
-        int index = GetInstractor(ID);
-        if(index != -1) {
-            instractors.set(index, this);
+        if(instractors.get(ID) != null) {
+            instractors.putIfAbsent(ID, this);
             return CommitToFile();
         }
         return false;
@@ -89,21 +73,20 @@ public class Instractor extends Person {
     public boolean DeleteInstractor(int ID) {
 
         LoadFromFile();
-        int index = GetInstractor(ID);
-        if (index != -1) {
-            instractors.remove(index);
+        if (instractors.get(ID) != null) {
+            instractors.remove(ID);
             return CommitToFile();
         }
         return false;
+
     }
     public Instractor searchInstractor(int   ID) {
 
         Instractor temp = new Instractor();
         LoadFromFile();
-        int index = GetInstractor(ID);
-        if (index != -1) {
+        if (instractors.get(ID) != null) {
 
-            return instractors.get(index);
+            return instractors.get(ID);
 
         } else {
 
@@ -113,7 +96,7 @@ public class Instractor extends Person {
 
     }
 
-    public ArrayList<Instractor> ListInstractor() {
+    public Hashtable<Integer, Instractor>  ListInstractor() {
 
         LoadFromFile();
         return instractors;
@@ -122,13 +105,13 @@ public class Instractor extends Person {
 
     @Override
     public boolean Login(int ID, String Pass) {
+
         LoadFromFile();
-        for (Instractor x : instractors) {
-            if (ID == x.getID() && Pass.equals(x.getPass())) {
-                return true;
-            }
+        if (instractors.get(ID) != null && instractors.get(ID).getPass() == Pass) {
+            return true;
         }
         return false;
+
     }
 
 }

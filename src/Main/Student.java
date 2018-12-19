@@ -1,31 +1,30 @@
 package Main;
 
+import java.io.Serializable;
 import java.util.ArrayList;
+import java.util.Hashtable;
 
-public class Student extends Person {
+public class Student extends Person implements Serializable {
 
     private final String studentFileName = "Files/Student.bin";
-    private static ArrayList<Student> student;
+    private static Hashtable<Integer, Student> student;
 
     //Attributes
 
 
     //Constructors
     public Student() {
-        student = new ArrayList<>();
+        student = new Hashtable<Integer, Student>();
     }
 
     public Student(String name, int ID, String pass, double SSN, int age) {
-        student = new ArrayList<>();
+        student = new Hashtable<Integer, Student>();
         this.setName(name);
         this.setID(ID);
         this.setPass(pass);
         this.setSSN(SSN);
         this.setAge(age);
     }
-
-    //Setter & Getter
-
 
     //Files
     public boolean CommitToFile() {
@@ -36,33 +35,19 @@ public class Student extends Person {
 
     public void LoadFromFile() {
 
-        student = (ArrayList<Student>) FManger.read(studentFileName);
+        student = (Hashtable<Integer, Student>) FManger.read(studentFileName);
 
     }
 
     //Setter & Getter
-    public int GetStudent(int ID) {
 
-        for (int i = 0; i < student.size(); i++)
-        {
-            if(student.get(i).getID() == (ID)) {
-                return i;
-            }
-        }
-
-        return -1;
-
-    }
 
     // Methods
     public boolean AddStudent () {
 
         LoadFromFile();
-        int index = GetStudent(this.getID());
-        
-        if(index == -1) {
-            student.add(this);
-            return CommitToFile();
+        if (student.get(this.getID()) != null) {
+            student.put(this.getID(), this);
         }
         return false;
 
@@ -71,9 +56,8 @@ public class Student extends Person {
     public boolean UpdateStudent (int ID) {
 
         LoadFromFile();
-        int index = GetStudent(ID);
-        if(index != -1) {
-            student.set(index, this);
+        if(student.get(ID) != null) {
+            student.putIfAbsent(ID, this);
             return CommitToFile();
         }
         return false;
@@ -83,9 +67,8 @@ public class Student extends Person {
     public boolean DeleteStudent(int ID) {
 
         LoadFromFile();
-        int index = GetStudent(ID);
-        if (index != -1) {
-            student.remove(index);
+        if (student.get(ID) != null) {
+            student.remove(ID);
             return CommitToFile();
         }
         return false;
@@ -94,10 +77,9 @@ public class Student extends Person {
 
         Student temp = new Student();
         LoadFromFile();
-        int index = GetStudent(ID);
-        if (index != -1) {
+        if (student.get(ID) != null) {
 
-            return student.get(index);
+            return student.get(ID);
 
         } else {
 
@@ -107,7 +89,7 @@ public class Student extends Person {
 
     }
 
-    public ArrayList<Student> ListStudent() {
+    public Hashtable<Integer, Student> ListStudent() {
 
         LoadFromFile();
         return student;
@@ -116,12 +98,12 @@ public class Student extends Person {
 
     @Override
     public boolean Login(int ID, String Pass) {
+
         LoadFromFile();
-        for (Student x : student) {
-            if (ID == x.getID() && Pass.equals(x.getPass())) {
-                return true;
-            }
+        if (student.get(ID) != null && student.get(ID).getPass() == Pass) {
+            return true;
         }
         return false;
+
     }
 }

@@ -1,13 +1,15 @@
 package Main;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.Hashtable;
 
-public class Courses {
+public class Courses implements Serializable {
     
     FileManger FManger = new FileManger();
     private final String courseFileName = "Files/Courses.bin";
-    private static ArrayList<Courses> courses;
+    private static Hashtable<Integer, Courses> courses;
 
     //Attributes
     private String name;
@@ -19,7 +21,7 @@ public class Courses {
 
     //Constructors
     public Courses() {
-
+        courses = new Hashtable<Integer, Courses>();
     }
 
     public Courses(String name, int code, Double price, Double grade, Date startDate, Date endDate) {
@@ -29,6 +31,7 @@ public class Courses {
         this.grade = grade;
         this.startDate = startDate;
         this.endDate = endDate;
+        courses = new Hashtable<Integer, Courses>();
     }
 
     //Setter & Getter
@@ -89,32 +92,16 @@ public class Courses {
 
     public void LoadFromFile() {
 
-        courses = (ArrayList<Courses>) FManger.read(courseFileName);
+        courses = (Hashtable<Integer, Courses>) FManger.read(courseFileName);
 
     }
 
     //Methods
-    public int GetCourses(int ID) {
-
-        for (int i = 0; i < courses.size(); i++)
-        {
-            if(courses.get(i).getCode() == (ID)) {
-                return i;
-            }
-        }
-
-        return -1;
-
-    }
-
     public boolean AddCourses() {
 
         LoadFromFile();
-        int index = GetCourses(this.getCode());
-        Exception myex = new Exception();
-        if(index == -1) {
-            courses.add(this);
-            return CommitToFile();
+        if (courses.get(this.getCode()) != null) {
+            courses.put(this.code, this);
         }
         return false;
 
@@ -123,9 +110,8 @@ public class Courses {
     public boolean UpdateCourses (int ID) {
 
         LoadFromFile();
-        int index = GetCourses(ID);
-        if(index != -1) {
-            courses.set(index, this);
+        if(courses.get(ID) != null) {
+            courses.putIfAbsent(ID, this);
             return CommitToFile();
         }
         return false;
@@ -135,9 +121,8 @@ public class Courses {
     public boolean DeleteCourses(int ID) {
 
         LoadFromFile();
-        int index = GetCourses(ID);
-        if (index != -1) {
-            courses.remove(index);
+        if (courses.get(ID) != null) {
+            courses.remove(ID);
             return CommitToFile();
         }
         return false;
@@ -146,10 +131,9 @@ public class Courses {
 
         Courses temp = new Courses();
         LoadFromFile();
-        int index = GetCourses(ID);
-        if (index != -1) {
+        if (courses.get(ID) != null) {
 
-            return courses.get(index);
+            return courses.get(ID);
 
         } else {
 
@@ -159,7 +143,7 @@ public class Courses {
 
     }
 
-    public ArrayList<Courses> ListCourses() {
+    public Hashtable<Integer, Courses>ListCourses() {
 
         LoadFromFile();
         return courses;
