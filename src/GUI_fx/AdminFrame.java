@@ -26,6 +26,7 @@ public class AdminFrame extends Application {
             Stage stage = new Stage();
             stage.setTitle("Admin");
             stage.setScene(scene);
+            stage.setResizable(false);
             stage.show();
         } catch (IOException e) {
             System.out.println("File Not Found");

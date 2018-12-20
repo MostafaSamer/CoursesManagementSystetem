@@ -45,6 +45,8 @@ public class LogIn extends Application {
     public void start(Stage stage) {
         launchWindow();
     }
+    //TODO change the mouse curse when it hover on a button
+    //TODO change the button color when te mouse hover on it
 
     public void launchWindow() {
         try {
@@ -53,6 +55,7 @@ public class LogIn extends Application {
             Stage stage = new Stage();
             stage.setTitle("Log In");
             stage.setScene(scene);
+            stage.setResizable(false);
             stage.show();
         } catch (IOException e) {
             System.out.println("File Not Found");

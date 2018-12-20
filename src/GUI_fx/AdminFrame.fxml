@@ -1,10 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI_fx.AdminFrame">
    <children>
-      <HBox prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #201854;" />
+      <HBox prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <VBox id="adminSlider" prefHeight="400.0" prefWidth="100.0" style="-fx-background-color: #201854;">
+               <children>
+                  <Region prefHeight="50.0" prefWidth="100.0" />
+                  <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: transparent; -fx-text-fill: #fff;" text="Add User" />
+                  <Region prefHeight="50.0" prefWidth="100.0" />
+                  <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: transparent; -fx-text-fill: #fff;" text="Search" />
+                  <Region prefHeight="50.0" prefWidth="100.0" />
+                  <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: transparent; -fx-text-fill: #fff;" text="Display All" />
+                  <Region prefHeight="90.0" prefWidth="100.0" />
+                  <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: transparent; -fx-text-fill: #fff;" text="Log out" />
+               </children></VBox>
+            <VBox prefHeight="400.0" prefWidth="500.0" />
+         </children></HBox>
    </children>
 </AnchorPane>

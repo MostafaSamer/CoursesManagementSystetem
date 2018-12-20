@@ -9,6 +9,6 @@
    <children>
       <TextField fx:id="idEnter" layoutX="215.0" layoutY="134.0" />
       <PasswordField fx:id="passEnter" layoutX="215.0" layoutY="187.0" />
-      <Button fx:id="btnEnter" alignment="CENTER" layoutX="269.0" layoutY="245.0" mnemonicParsing="false" onAction="#logInClicked" text="Button" textAlignment="CENTER" />
+      <Button fx:id="btnEnter" alignment="CENTER" layoutX="253.0" layoutY="243.0" mnemonicParsing="false" onAction="#logInClicked" prefHeight="38.0" prefWidth="95.0" style="-fx-background-color: transparent; -fx-text-fill: #fff;" text="Log In" textAlignment="CENTER" />
    </children>
 </AnchorPane>
