@@ -1,5 +1,10 @@
 package GUI_Imp;
+import GUI_fx.AdminFrame;
+import GUI_fx.LogIn;
 import Main.*;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 
 public class logIN {
 
@@ -11,7 +16,8 @@ public class logIN {
 
         if (x.Login(ID, pass)){
             // Start Admin
-            System.out.println("Admin Entered");
+            //System.out.println("Admin Entered");
+            new AdminFrame().launchWindow();
             return true;
         } else if (y.Login(ID, pass)) {
             // Start Student

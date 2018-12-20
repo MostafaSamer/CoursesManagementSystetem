@@ -25,10 +25,15 @@ public class LogIn extends Application {
             if(!new logIN().ILOGIN(Integer.parseInt(idEnter.getText()), passEnter.getText().toString())) {
                 //User Not Found
                 System.out.println("User Not Found");
+            } else {
+
+                System.out.println("Log in out");
             }
         } catch (NumberFormatException e) {
             // IF ID Was not a Number
             System.out.println("Number Error");
+        } catch (Exception e) {
+            e.printStackTrace();
         }
     }
 
@@ -38,10 +43,14 @@ public class LogIn extends Application {
 
     @Override
     public void start(Stage stage) {
+        launchWindow();
+    }
 
+    public void launchWindow() {
         try {
             Parent root = FXMLLoader.load(getClass().getResource("LogIn.fxml"));
             Scene scene = new Scene(root, 600, 400);
+            Stage stage = new Stage();
             stage.setTitle("Log In");
             stage.setScene(scene);
             stage.show();
@@ -49,4 +58,5 @@ public class LogIn extends Application {
             System.out.println("File Not Found");
         }
     }
+
 }
