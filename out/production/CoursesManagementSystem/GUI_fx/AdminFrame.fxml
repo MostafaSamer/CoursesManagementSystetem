@@ -15,10 +15,10 @@
    <children>
       <HBox prefHeight="400.0" prefWidth="600.0">
          <children>
-            <VBox id="adminSlider" prefHeight="400.0" prefWidth="150.0" style="-fx-background-color: #201854;">
+            <VBox fx:id="adminSlider" prefHeight="400.0" prefWidth="150.0" style="-fx-background-color: #201854;">
                <children>
                   <Region prefHeight="40.0" prefWidth="150.0" />
-                  <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="150.0" style="-fx-background-color: transparent; -fx-text-fill: #fff;" text="Add Student" />
+                  <Button mnemonicParsing="false" onAction="#btnAddStudentClicked" prefHeight="40.0" prefWidth="150.0" style="-fx-background-color: transparent; -fx-text-fill: #fff;" text="Add Student" />
                   <Region prefHeight="40.0" prefWidth="150.0" />
                   <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="150.0" style="-fx-background-color: transparent; -fx-text-fill: #fff;" text="Add Instractor" />
                   <Region prefHeight="40.0" prefWidth="150.0" />
@@ -28,7 +28,7 @@
                   <Region prefHeight="40.0" prefWidth="150.0" />
                   <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="150.0" style="-fx-background-color: transparent; -fx-text-fill: #fff;" text="Log out" />
                </children></VBox>
-            <VBox id="addStudentPanel" prefHeight="400.0" prefWidth="500.0">
+            <VBox prefHeight="400.0" prefWidth="500.0">
                <children>
                   <Pane prefHeight="90.0" prefWidth="500.0">
                      <children>
@@ -40,9 +40,9 @@
                         <Pane layoutX="21.0" layoutY="48.0" prefHeight="5.0" prefWidth="200.0" style="-fx-background-color: #201854;" />
                      </children>
                   </Pane>
-                  <VBox id="AddBox" prefHeight="310.0" prefWidth="500.0">
+                  <VBox fx:id="AddBox" prefHeight="310.0" prefWidth="500.0" visible="true">
                      <children>
-                        <TextField id="idAdd" promptText="ID">
+                        <TextField fx:id="idAdd" promptText="ID">
                            <padding>
                               <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                            </padding>
@@ -50,7 +50,7 @@
                               <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
                            </VBox.margin>
                         </TextField>
-                        <PasswordField id="passAdd" promptText="Password">
+                        <PasswordField fx:id="passAdd" promptText="Password">
                            <padding>
                               <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                            </padding>
@@ -58,7 +58,7 @@
                               <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
                            </VBox.margin>
                         </PasswordField>
-                        <TextField id="nameAdd" promptText="Name">
+                        <TextField fx:id="nameAdd" promptText="Name">
                            <padding>
                               <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                            </padding>
@@ -66,7 +66,7 @@
                               <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
                            </VBox.margin>
                         </TextField>
-                        <TextField id="ssnAdd" promptText="SSN">
+                        <TextField fx:id="ssnAdd" promptText="SSN">
                            <padding>
                               <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                            </padding>
@@ -74,7 +74,7 @@
                               <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
                            </VBox.margin>
                         </TextField>
-                        <TextField id="ageAdd" prefHeight="36.0" prefWidth="239.0" promptText="Age">
+                        <TextField fx:id="ageAdd" prefHeight="36.0" prefWidth="239.0" promptText="Age">
                            <padding>
                               <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                            </padding>
@@ -84,8 +84,8 @@
                         </TextField>
                         <Pane prefHeight="200.0" prefWidth="200.0">
                            <children>
-                              <Button id="btnCancel" layoutX="234.0" layoutY="12.0" mnemonicParsing="false" onAction="#btnCancelClicked" prefHeight="36.0" prefWidth="100.0" style="-fx-background-color: #201854; -fx-text-fill: #fff;" text="Cancel" />
-                              <Button id="btnAdd" layoutX="359.0" layoutY="12.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="100.0" style="-fx-background-color: #201854; -fx-text-fill: #fff;" text="Add" />
+                              <Button fx:id="btnStudentCancel" layoutX="234.0" layoutY="12.0" mnemonicParsing="false" onAction="#BtnCancelStudentClicked" prefHeight="36.0" prefWidth="100.0" style="-fx-background-color: #201854; -fx-text-fill: #fff;" text="Cancel" />
+                              <Button fx:id="btnStudentAdd" layoutX="359.0" layoutY="12.0" mnemonicParsing="false" onAction="#BtnAddStudentClicked" prefHeight="36.0" prefWidth="100.0" style="-fx-background-color: #201854; -fx-text-fill: #fff;" text="Add" />
                            </children>
                         </Pane>
                      </children>

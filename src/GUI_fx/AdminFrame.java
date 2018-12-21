@@ -1,12 +1,15 @@
 package GUI_fx;
 
-import javafx.application.Application;
+import javafx.application.*;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
-import javafx.stage.Stage;
+import javafx.scene.control.Button;
+import javafx.scene.control.TextField;
+import javafx.scene.layout.VBox;
+import javafx.stage.*;
 
 import java.io.IOException;
 
@@ -15,17 +18,28 @@ public class AdminFrame extends Application {
     public static Stage stage;
 
     @FXML
-    public TextField idAdd, nameAdd, ssnAdd, ageAdd;
+    public TextField idAdd;
+    public TextField nameAdd;
+    public TextField ssnAdd;
+    public TextField ageAdd;
     public PasswordField passAdd;
-    public Button btnAdd, btnCancel;
+    public Button btnStudentAdd;
+    public Button btnStudentCancel;
+    public VBox AddBox;
+
+    //Slide Button
+    @FXML
+    public void btnAddStudentClicked() {
+        AddBox.setVisible(true);
+    }
 
     @FXML
-    public void BtnAddClicked() {
+    public void BtnAddStudentClicked() {
 
     }
 
     @FXML
-    public void btnCancelClicked() {
+    public void BtnCancelStudentClicked() {
         idAdd.setText("");
         nameAdd.setText("");
         ssnAdd.setText("");
