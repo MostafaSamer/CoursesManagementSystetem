@@ -13,7 +13,6 @@ public class Main {
         checkDirectoryContents(currentDir);
         checkDirectoryContents(currentDir);
         Application.launch(LogIn.class, args);
-
     }
 
     private static void checkDirectoryContents(File dir) {

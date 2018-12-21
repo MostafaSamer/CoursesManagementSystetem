@@ -52,8 +52,10 @@ public class Instractor extends Person implements Serializable {
     public boolean AddInstractor () {
 
         LoadFromFile();
-        if (instractors.get(this.getID()) != null) {
+        if (instractors.get(this.getID()) == null) {
             instractors.put(this.getID(), this);
+            CommitToFile();
+            return true;
         }
         return false;
 

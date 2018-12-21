@@ -1,5 +1,7 @@
 package GUI_fx;
 
+import GUI_Imp.Admin_Imp;
+import Main.Student;
 import javafx.application.*;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -32,12 +34,19 @@ public class AdminFrame extends Application {
     public void btnAddStudentClicked() {
         AddBox.setVisible(true);
     }
-
     @FXML
     public void BtnAddStudentClicked() {
-
+        //public boolean addStudent(int id, String name, String pass, int age, double ssn)
+        try {
+            if (new Admin_Imp().addStudent(Integer.parseInt(idAdd.getText()), nameAdd.getText(), passAdd.getText(), Integer.parseInt(ageAdd.getText()), Double.parseDouble(ssnAdd.getText()))) {
+                showinfoMess("Added Successfully");
+            } else {
+                showErrMess("ID is Taken");
+            }
+        } catch (NumberFormatException e) {
+            showErrMess("ID, Age and SSN must be Numbers");
+        }
     }
-
     @FXML
     public void BtnCancelStudentClicked() {
         idAdd.setText("");
@@ -66,11 +75,21 @@ public class AdminFrame extends Application {
             stage.setResizable(false);
             stage.show();
         } catch (IOException e) {
-            Alert alert = new Alert(Alert.AlertType.ERROR);
-            alert.setHeaderText("Error some file not found");
-            alert.showAndWait();
+            showErrMess("Error some file not found");
             //System.out.println("File Not Found");
         }
+    }
+
+    public void showErrMess(String mess) {
+        Alert alert = new Alert(Alert.AlertType.ERROR);
+        alert.setHeaderText(mess);
+        alert.showAndWait();
+    }
+
+    public void showinfoMess(String mess) {
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setHeaderText(mess);
+        alert.showAndWait();
     }
 
 }

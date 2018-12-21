@@ -100,8 +100,10 @@ public class Courses implements Serializable {
     public boolean AddCourses() {
 
         LoadFromFile();
-        if (courses.get(this.getCode()) != null) {
+        if (courses.get(this.getCode()) == null) {
             courses.put(this.code, this);
+            CommitToFile();
+            return true;
         }
         return false;
 

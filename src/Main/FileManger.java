@@ -1,7 +1,7 @@
 package Main;
 import java.io.*;
 
-public class FileManger {
+public class FileManger implements Serializable {
 
     public boolean write(String FilePath, Object data) {
 

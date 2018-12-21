@@ -46,8 +46,10 @@ public class Student extends Person implements Serializable {
     public boolean AddStudent () {
 
         LoadFromFile();
-        if (student.get(this.getID()) != null) {
+        if (student.get(this.getID()) == null) {
             student.put(this.getID(), this);
+            CommitToFile();
+            return true;
         }
         return false;
 
