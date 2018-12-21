@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="Still Coding">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CoursesManagementSystem/GUI_fx/LogIn.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CoursesManagementSystem/GUI_fx/LogIn.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GUI_fx/AdminFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI_fx/AdminFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GUI_fx/InstractorFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI_fx/InstractorFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GUI_fx/LogIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI_fx/LogIn.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GUI_fx/StudentFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI_fx/StudentFrame.java" afterDir="false" />
-    </list>
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="Still Coding" />
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -71,7 +64,7 @@
     <favorites_list name="JavaFxApplication" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -194,8 +187,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -416,7 +409,7 @@
   <component name="ToolWindowManager">
     <frame x="1366" y="0" width="1366" height="768" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.1828528" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.18588771" />
       <window_info id="Structure" order="1" weight="0.24962063" />
       <window_info id="Favorites" order="2" weight="0.32928678" />
       <window_info id="Designer" order="3" />
@@ -564,28 +557,28 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/GUI_fx/AdminFrame.fxml">
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
       <provider editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="30" column="146" selection-start-line="30" selection-start-column="146" selection-end-line="30" selection-end-column="146" />
         </state>
       </provider>
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/GUI_fx/StudentFrame.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
         </state>
       </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/GUI_fx/InstractorFrame.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
         </state>
       </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/GUI_Imp/Student_Imp.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -616,12 +609,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/GUI_fx/LogIn.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" column="129" selection-start-line="11" selection-start-column="117" selection-end-line="11" selection-end-column="129" />
         </state>
       </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/GUI_Imp/logIN.java">
       <provider selected="true" editor-type-id="text-editor">
