@@ -1,10 +1,11 @@
 package GUI_fx;
 
 import javafx.application.Application;
+import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Alert;
+import javafx.scene.control.*;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -12,6 +13,25 @@ import java.io.IOException;
 public class AdminFrame extends Application {
 
     public static Stage stage;
+
+    @FXML
+    public TextField idAdd, nameAdd, ssnAdd, ageAdd;
+    public PasswordField passAdd;
+    public Button btnAdd, btnCancel;
+
+    @FXML
+    public void BtnAddClicked() {
+
+    }
+
+    @FXML
+    public void btnCancelClicked() {
+        idAdd.setText("");
+        nameAdd.setText("");
+        ssnAdd.setText("");
+        ageAdd.setText("");
+        passAdd.setText("");
+    }
 
     public static void main(String[] args) {
         launch(args);
