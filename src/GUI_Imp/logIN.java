@@ -33,7 +33,6 @@ public class logIN {
             return true;
         }
         return false;
-        //TODo Close the Log in Class after Loging in
     }
 
 }

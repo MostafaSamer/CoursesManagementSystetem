@@ -20,25 +20,35 @@ public class AdminFrame extends Application {
     public static Stage stage;
 
     @FXML
-    public TextField idAdd;
-    public TextField nameAdd;
-    public TextField ssnAdd;
-    public TextField ageAdd;
-    public PasswordField passAdd;
+    public TextField idSAdd;
+    public TextField nameSAdd;
+    public TextField ssnSAdd;
+    public TextField ageSAdd;
+    public PasswordField passSAdd;
+    public TextField idIAdd;
+    public TextField nameIAdd;
+    public TextField ssnIAdd;
+    public TextField ageIAdd;
+    public TextField salaryIAdd;
+    public PasswordField passIAdd;
     public Button btnStudentAdd;
     public Button btnStudentCancel;
-    public VBox AddBox;
+    public VBox AddStudentBox;
+    public VBox AddInstractorBox;
+    public Button btnInstractorAdd;
+    public Button btnInstractorCancel;
 
     //Slide Button
     @FXML
     public void btnAddStudentClicked() {
-        AddBox.setVisible(true);
+        AddStudentBox.setVisible(true);
+        AddInstractorBox.setVisible(false);
     }
     @FXML
     public void BtnAddStudentClicked() {
         //public boolean addStudent(int id, String name, String pass, int age, double ssn)
         try {
-            if (new Admin_Imp().addStudent(Integer.parseInt(idAdd.getText()), nameAdd.getText(), passAdd.getText(), Integer.parseInt(ageAdd.getText()), Double.parseDouble(ssnAdd.getText()))) {
+            if (new Admin_Imp().addStudent(Integer.parseInt(idSAdd.getText()), nameSAdd.getText(), passSAdd.getText(), Integer.parseInt(ageSAdd.getText()), Double.parseDouble(ssnSAdd.getText()))) {
                 showinfoMess("Added Successfully");
             } else {
                 showErrMess("ID is Taken");
@@ -49,11 +59,38 @@ public class AdminFrame extends Application {
     }
     @FXML
     public void BtnCancelStudentClicked() {
-        idAdd.setText("");
-        nameAdd.setText("");
-        ssnAdd.setText("");
-        ageAdd.setText("");
-        passAdd.setText("");
+        idSAdd.setText("");
+        nameSAdd.setText("");
+        ssnSAdd.setText("");
+        ageSAdd.setText("");
+        passSAdd.setText("");
+    }
+
+    @FXML
+    public void btnAddInterstractorClicked() {
+        AddStudentBox.setVisible(false);
+        AddInstractorBox.setVisible(true);
+    }
+    @FXML
+    public void BtnAddInstractorClicked() {
+        //public boolean addStudent(int id, String name, String pass, int age, double ssn)
+        try {
+            if (new Admin_Imp().addInstractor(Integer.parseInt(idIAdd.getText()), nameIAdd.getText(), passIAdd.getText(), Integer.parseInt(ageIAdd.getText()), Double.parseDouble(ssnIAdd.getText()), Double.parseDouble(salaryIAdd.getText()))) {
+                showinfoMess("Added Successfully");
+            } else {
+                showErrMess("ID is Taken");
+            }
+        } catch (NumberFormatException e) {
+            showErrMess("ID, Age and SSN must be Numbers");
+        }
+    }
+    @FXML
+    public void BtnCancelInstractorClicked() {
+        idIAdd.setText("");
+        nameIAdd.setText("");
+        ssnIAdd.setText("");
+        ageIAdd.setText("");
+        passIAdd.setText("");
     }
 
     public static void main(String[] args) {
