@@ -4,10 +4,9 @@
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="Still Coding">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Files/Instractor.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Files/Instractor.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Files/Student.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Files/Student.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CoursesManagementSystem/GUI_Imp/Admin_Imp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CoursesManagementSystem/GUI_Imp/Admin_Imp.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GUI_Imp/Admin_Imp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI_Imp/Admin_Imp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GUI_Imp/logIN.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI_Imp/logIN.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GUI_fx/AdminFrame.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI_fx/AdminFrame.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GUI_fx/AdminFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI_fx/AdminFrame.java" afterDir="false" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -75,14 +74,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/GUI_fx/AdminFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-425">
-              <caret line="62" column="29" lean-forward="true" selection-start-line="62" selection-start-column="29" selection-end-line="62" selection-end-column="29" />
+            <state relative-caret-position="105">
+              <caret line="62" column="29" selection-start-line="62" selection-start-column="29" selection-end-line="62" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1683#1684#0" expanded="true" />
-                <element signature="e#1711#1712#0" expanded="true" />
-                <element signature="e#1770#1771#0" expanded="true" />
-                <element signature="e#1800#1801#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -91,8 +86,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main/Instractor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="18" column="93" lean-forward="true" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="93" />
+            <state relative-caret-position="225">
+              <caret line="18" column="93" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="93" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -103,8 +98,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/GUI_Imp/Admin_Imp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+            <state relative-caret-position="60">
+              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
             </state>
           </provider>
         </entry>
@@ -112,7 +107,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/GUI_fx/AdminFrame.fxml">
           <provider editor-type-id="text-editor">
-            <state relative-caret-position="-42">
+            <state relative-caret-position="600">
               <caret line="40" column="32" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="32" />
             </state>
           </provider>
@@ -215,7 +210,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -250,7 +245,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -279,7 +274,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.AdminFrame">
+  <component name="RunManager" selected="Application.Main">
     <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
       <option name="VMOptions" />
       <option name="arguments" />
@@ -418,8 +413,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.AdminFrame" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.AdminFrame" />
         <item itemvalue="Application.StudentFrame" />
         <item itemvalue="Application.InstractorFrame" />
         <item itemvalue="Application.LogIn" />
@@ -471,20 +466,20 @@
   <component name="ToolWindowManager">
     <frame x="1366" y="0" width="1366" height="768" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" weight="0.19802731" />
-      <window_info id="Structure" order="1" weight="0.24962063" />
-      <window_info id="Favorites" order="2" weight="0.32928678" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.1494689" />
+      <window_info id="Structure" order="1" weight="0.25341427" />
+      <window_info id="Favorites" order="2" weight="0.32852808" />
       <window_info id="Designer" order="3" />
       <window_info id="Image Layers" order="4" />
       <window_info id="UI Designer" order="5" />
       <window_info id="Capture Tool" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.10845295" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.24242425" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.22807017" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.12280702" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.18979266" />
       <window_info anchor="bottom" id="Application Servers" order="7" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Problems" order="9" />
@@ -731,40 +726,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main/Instractor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="18" column="93" lean-forward="true" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="93" />
+        <state relative-caret-position="225">
+          <caret line="18" column="93" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="93" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GUI_fx/AdminFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-425">
-          <caret line="62" column="29" lean-forward="true" selection-start-line="62" selection-start-column="29" selection-end-line="62" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1683#1684#0" expanded="true" />
-            <element signature="e#1711#1712#0" expanded="true" />
-            <element signature="e#1770#1771#0" expanded="true" />
-            <element signature="e#1800#1801#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/GUI_fx/AdminFrame.fxml">
       <provider editor-type-id="text-editor">
-        <state relative-caret-position="-42">
+        <state relative-caret-position="600">
           <caret line="40" column="32" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="32" />
         </state>
       </provider>
       <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/GUI_fx/AdminFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="62" column="29" selection-start-line="62" selection-start-column="29" selection-end-line="62" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/GUI_Imp/Admin_Imp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+        <state relative-caret-position="60">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
