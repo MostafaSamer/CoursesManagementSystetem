@@ -17,16 +17,19 @@
          <children>
             <VBox fx:id="adminSlider" prefHeight="400.0" prefWidth="150.0" style="-fx-background-color: #201854;">
                <children>
-                  <Region prefHeight="40.0" prefWidth="150.0" />
-                  <Button mnemonicParsing="false" onAction="#btnAddStudentClicked" prefHeight="40.0" prefWidth="150.0" style="-fx-background-color: transparent; -fx-text-fill: #fff;" text="Add Student" />
-                  <Region prefHeight="40.0" prefWidth="150.0" />
-                  <Button mnemonicParsing="false" onAction="#btnAddInterstractorClicked" prefHeight="40.0" prefWidth="150.0" style="-fx-background-color: transparent; -fx-text-fill: #fff;" text="Add Instractor" />
-                  <Region prefHeight="40.0" prefWidth="150.0" />
-                  <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="150.0" style="-fx-background-color: transparent; -fx-text-fill: #fff;" text="Search" />
-                  <Region prefHeight="40.0" prefWidth="150.0" />
-                  <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="150.0" style="-fx-background-color: transparent; -fx-text-fill: #fff;" text="Display All" />
-                  <Region prefHeight="40.0" prefWidth="150.0" />
-                  <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="150.0" style="-fx-background-color: transparent; -fx-text-fill: #fff;" text="Log out" />
+                  <Button mnemonicParsing="false" onAction="#btnAddStudentClicked" prefHeight="30.769230769" prefWidth="150.0" style="-fx-background-color: transparent; -fx-text-fill: #fff;" text="Add Student" />
+                  <Region prefHeight="30.769230769" prefWidth="150.0" />
+                  <Button mnemonicParsing="false" onAction="#btnAddInterstractorClicked" prefHeight="30.769230769" prefWidth="150.0" style="-fx-background-color: transparent; -fx-text-fill: #fff;" text="Add Instractor" />
+                  <Region prefHeight="30.769230769" prefWidth="150.0" />
+                  <Button mnemonicParsing="false" prefHeight="30.769230769" prefWidth="150.0" style="-fx-background-color: transparent; -fx-text-fill: #fff;" text="Search Person" />
+                  <Region prefHeight="30.769230769" prefWidth="150.0" />
+                  <Button mnemonicParsing="false" prefHeight="30.769230769" prefWidth="150.0" style="-fx-background-color: transparent; -fx-text-fill: #fff;" text="Search Course" />
+                  <Region prefHeight="30.769230769" prefWidth="150.0" />
+                  <Button mnemonicParsing="false" prefHeight="30.769230769" prefWidth="150.0" style="-fx-background-color: transparent; -fx-text-fill: #fff;" text="Display Persons" />
+                  <Region prefHeight="30.769230769" prefWidth="150.0" />
+                  <Button mnemonicParsing="false" prefHeight="30.769230769" prefWidth="150.0" style="-fx-background-color: transparent; -fx-text-fill: #fff;" text="Display Courses" />
+                  <Region prefHeight="30.769230769" prefWidth="150.0" />
+                  <Button mnemonicParsing="false" prefHeight="30.769230769" prefWidth="150.0" style="-fx-background-color: transparent; -fx-text-fill: #fff;" text="Log out" />
                </children></VBox>
             <VBox prefHeight="400.0" prefWidth="500.0">
                <children>
@@ -154,6 +157,7 @@
                               </Pane>
                            </children>
                         </VBox>
+                        <VBox fx:id="SearchPepoleBox" prefHeight="310.0" prefWidth="475.0" visible="false" />
                      </children>
                   </Pane>
                </children></VBox>
