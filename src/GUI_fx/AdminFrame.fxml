@@ -92,7 +92,7 @@
                               </Pane>
                            </children>
                         </VBox>
-                        <VBox fx:id="AddInstractorBox" prefHeight="310.0" prefWidth="475.0">
+                        <VBox fx:id="AddInstractorBox" prefHeight="310.0" prefWidth="475.0" visible="false">
                            <children>
                               <TextField fx:id="idIAdd" promptText="ID">
                                  <padding>
