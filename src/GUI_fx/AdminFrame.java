@@ -20,6 +20,8 @@ public class AdminFrame extends Application {
     public static Stage stage;
 
     @FXML
+    public Button addStudent;
+    public Button addInstractor;
     public TextField idSAdd;
     public TextField nameSAdd;
     public TextField ssnSAdd;
