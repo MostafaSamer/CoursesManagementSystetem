@@ -37,6 +37,7 @@ public class AdminFrame extends Application {
     public Button btnStudentCancel;
     public VBox AddStudentBox;
     public VBox AddInstractorBox;
+    public VBox SearchPepoleBox;
     public Button btnInstractorAdd;
     public Button btnInstractorCancel;
 
@@ -45,6 +46,7 @@ public class AdminFrame extends Application {
     public void btnAddStudentClicked() {
         AddStudentBox.setVisible(true);
         AddInstractorBox.setVisible(false);
+        SearchPepoleBox.setVisible(false);
     }
     @FXML
     public void BtnAddStudentClicked() {
@@ -72,6 +74,7 @@ public class AdminFrame extends Application {
     public void btnAddInterstractorClicked() {
         AddStudentBox.setVisible(false);
         AddInstractorBox.setVisible(true);
+        SearchPepoleBox.setVisible(false);
     }
     @FXML
     public void BtnAddInstractorClicked() {
@@ -93,6 +96,12 @@ public class AdminFrame extends Application {
         ssnIAdd.setText("");
         ageIAdd.setText("");
         passIAdd.setText("");
+    }
+    @FXML
+    public void searchPersonClicked() {
+        AddStudentBox.setVisible(false);
+        AddInstractorBox.setVisible(false);
+        SearchPepoleBox.setVisible(true);
     }
 
     public static void main(String[] args) {

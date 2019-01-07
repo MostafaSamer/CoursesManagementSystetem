@@ -21,7 +21,7 @@
                   <Region prefHeight="30.769230769" prefWidth="150.0" />
                   <Button fx:id="addInstractor" mnemonicParsing="false" onAction="#btnAddInterstractorClicked" prefHeight="30.769230769" prefWidth="150.0" style="-fx-background-color: transparent; -fx-text-fill: #fff;" text="Add Instractor" />
                   <Region prefHeight="30.769230769" prefWidth="150.0" />
-                  <Button mnemonicParsing="false" prefHeight="30.769230769" prefWidth="150.0" style="-fx-background-color: transparent; -fx-text-fill: #fff;" text="Search Person" />
+                  <Button fx:id="searchPerson" mnemonicParsing="false" onAction="#searchPersonClicked" prefHeight="30.769230769" prefWidth="150.0" style="-fx-background-color: transparent; -fx-text-fill: #fff;" text="Search Person" />
                   <Region prefHeight="30.769230769" prefWidth="150.0" />
                   <Button mnemonicParsing="false" prefHeight="30.769230769" prefWidth="150.0" style="-fx-background-color: transparent; -fx-text-fill: #fff;" text="Search Course" />
                   <Region prefHeight="30.769230769" prefWidth="150.0" />
