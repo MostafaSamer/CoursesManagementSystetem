@@ -41,7 +41,7 @@ public class AdminFrame extends Application {
     public Button btnInstractorAdd;
     public Button btnInstractorCancel;
 
-    //Slide Button
+    //Add Student
     @FXML
     public void btnAddStudentClicked() {
         AddStudentBox.setVisible(true);
@@ -70,6 +70,7 @@ public class AdminFrame extends Application {
         passSAdd.setText("");
     }
 
+    //Add Instractor
     @FXML
     public void btnAddInterstractorClicked() {
         AddStudentBox.setVisible(false);
@@ -97,6 +98,8 @@ public class AdminFrame extends Application {
         ageIAdd.setText("");
         passIAdd.setText("");
     }
+
+    //Search Person
     @FXML
     public void searchPersonClicked() {
         AddStudentBox.setVisible(false);

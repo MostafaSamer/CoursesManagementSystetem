@@ -157,7 +157,7 @@
                               </Pane>
                            </children>
                         </VBox>
-                        <VBox fx:id="SearchPepoleBox" prefHeight="310.0" prefWidth="475.0">
+                        <VBox fx:id="SearchPepoleBox" prefHeight="310.0" prefWidth="475.0" visible="false">
                            <children>
                               <HBox prefHeight="53.0" prefWidth="475.0">
                                  <children>
@@ -169,7 +169,7 @@
                                           <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
                                        </HBox.margin>
                                     </TextField>
-                                    <Button mnemonicParsing="false" prefHeight="36.0" prefWidth="127.0" text="Button">
+                                    <Button mnemonicParsing="false" prefHeight="36.0" prefWidth="127.0" text="Search">
                                        <HBox.margin>
                                           <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
                                        </HBox.margin>
