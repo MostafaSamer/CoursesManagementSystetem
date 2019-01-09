@@ -29,7 +29,7 @@
                   <Region prefHeight="30.769230769" prefWidth="150.0" />
                   <Button mnemonicParsing="false" prefHeight="30.769230769" prefWidth="150.0" style="-fx-background-color: transparent; -fx-text-fill: #fff;" text="Display Courses" />
                   <Region prefHeight="30.769230769" prefWidth="150.0" />
-                  <Button mnemonicParsing="false" prefHeight="30.769230769" prefWidth="150.0" style="-fx-background-color: transparent; -fx-text-fill: #fff;" text="Log out" />
+                  <Button fx:id="logOut" mnemonicParsing="false" prefHeight="30.769230769" prefWidth="150.0" style="-fx-background-color: transparent; -fx-text-fill: #fff;" text="Log out" />
                </children></VBox>
             <VBox prefHeight="400.0" prefWidth="500.0">
                <children>
@@ -157,7 +157,7 @@
                               </Pane>
                            </children>
                         </VBox>
-                        <VBox fx:id="SearchPepoleBox" prefHeight="310.0" prefWidth="475.0">
+                        <VBox fx:id="SearchPepoleBox" prefHeight="310.0" prefWidth="475.0" visible="false">
                            <children>
                               <HBox prefHeight="53.0" prefWidth="475.0">
                                  <children>
@@ -169,7 +169,99 @@
                                           <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
                                        </HBox.margin>
                                     </TextField>
-                                    <Button fx:id="searchPersonbtn" mnemonicParsing="false" onAction="#searchPersonbtnClicked" prefHeight="36.0" prefWidth="127.0" text="Search">
+                                    <Button fx:id="searchPersonbtn" mnemonicParsing="false" onAction="#searchPersonbtnClicked" prefHeight="36.0" prefWidth="127.0" style="-fx-background-color: #201854; -fx-text-fill: #fff;" text="Search">
+                                       <HBox.margin>
+                                          <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+                                       </HBox.margin>
+                                       <padding>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </padding>
+                                    </Button>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="54.0" prefWidth="475.0">
+                                 <children>
+                                    <Label prefHeight="36.0" prefWidth="127.0" style="-fx-text-fill: #201854;" text="Name" wrapText="true">
+                                       <HBox.margin>
+                                          <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+                                       </HBox.margin>
+                                       <padding>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </padding></Label>
+                                    <TextField fx:id="nameSeachStudent" prefHeight="36.0" prefWidth="315.0">
+                                       <HBox.margin>
+                                          <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+                                       </HBox.margin>
+                                       <padding>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </padding></TextField>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="54.0" prefWidth="475.0">
+                                 <children>
+                                    <Label prefHeight="36.0" prefWidth="127.0" style="-fx-text-fill: #201854;" text="SSN" wrapText="true">
+                                       <HBox.margin>
+                                          <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+                                       </HBox.margin>
+                                       <padding>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </padding></Label>
+                                    <TextField fx:id="ssnSeachStudent" prefHeight="36.0" prefWidth="315.0">
+                                       <HBox.margin>
+                                          <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+                                       </HBox.margin>
+                                       <padding>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </padding></TextField>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="54.0" prefWidth="475.0">
+                                 <children>
+                                    <Label prefHeight="36.0" prefWidth="127.0" style="-fx-text-fill: #201854;" text="Age" wrapText="true">
+                                       <HBox.margin>
+                                          <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+                                       </HBox.margin>
+                                       <padding>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </padding></Label>
+                                    <TextField fx:id="ageSeachStudent" prefHeight="36.0" prefWidth="315.0">
+                                       <HBox.margin>
+                                          <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+                                       </HBox.margin>
+                                       <padding>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </padding></TextField>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="54.0" prefWidth="475.0">
+                                 <children>
+                                    <Label prefHeight="36.0" prefWidth="127.0" style="-fx-text-fill: #201854;" text="Cources" wrapText="true">
+                                       <HBox.margin>
+                                          <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+                                       </HBox.margin>
+                                       <padding>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </padding></Label>
+                                    <TextField fx:id="coursesSeachStudent" prefHeight="36.0" prefWidth="315.0">
+                                       <HBox.margin>
+                                          <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+                                       </HBox.margin>
+                                       <padding>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </padding></TextField>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="54.0" prefWidth="475.0">
+                                 <children>
+                                    <Button mnemonicParsing="false" text="Delete">
+                                       <HBox.margin>
+                                          <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+                                       </HBox.margin>
+                                       <padding>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </padding>
+                                    </Button>
+                                    <Button mnemonicParsing="false" text="Update">
                                        <HBox.margin>
                                           <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
                                        </HBox.margin>

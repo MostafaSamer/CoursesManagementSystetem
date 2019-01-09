@@ -1,6 +1,7 @@
 package GUI_fx;
 
 import GUI_Imp.Admin_Imp;
+import Main.*;
 import Main.Student;
 import javafx.application.*;
 import javafx.fxml.FXML;
@@ -43,6 +44,10 @@ public class AdminFrame extends Application {
     public Button searchPersonbtn;
     public TextField idSearchID;
     public Button logOut;
+    public TextField nameSeachStudent;
+    public TextField ssnSeachStudent;
+    public TextField ageSeachStudent;
+    public TextField coursesSeachStudent;
 
     //Add Student
     @FXML
@@ -53,7 +58,6 @@ public class AdminFrame extends Application {
     }
     @FXML
     public void BtnAddStudentClicked() {
-        //public boolean addStudent(int id, String name, String pass, int age, double ssn)
         try {
             if (new Admin_Imp().addStudent(Integer.parseInt(idSAdd.getText()), nameSAdd.getText(), passSAdd.getText(), Integer.parseInt(ageSAdd.getText()), Double.parseDouble(ssnSAdd.getText()))) {
                 showinfoMess("Added Successfully");
@@ -110,9 +114,16 @@ public class AdminFrame extends Application {
         SearchPepoleBox.setVisible(true);
     }
     public void searchPersonbtnClicked() {
-        Student s = new Admin_Imp().SeachStudentImp(Integer.parseInt(idSearchID.getText()));
-        //ToDo Create a TextFields
-        //ToDo put the s attribute in the textFields
+        Student s = new Student().searchStudent(Integer.parseInt(idSearchID.getText()));
+        if (!(s.getAge() == 0)) {
+            nameSeachStudent.setText(s.getName());
+            ssnSeachStudent.setText(Double.toString(s.getSSN()));
+            ageSeachStudent.setText(Integer.toString(s.getAge()));
+            // ToDo SSN issue in casting to String
+            // ToDo coursesSeachStudent.setText();
+        } else {
+            showErrMess("Student Not Found");
+        }
     }
 
     //LogOut
