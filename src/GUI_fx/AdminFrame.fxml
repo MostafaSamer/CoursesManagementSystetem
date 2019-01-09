@@ -8,7 +8,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
-<?import javafx.scene.layout.Region?>
 <?import javafx.scene.layout.VBox?>
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI_fx.AdminFrame">
@@ -17,18 +16,15 @@
          <children>
             <VBox fx:id="adminSlider" prefHeight="400.0" prefWidth="150.0" style="-fx-background-color: #201854;">
                <children>
-                  <Button fx:id="addStudent" mnemonicParsing="false" onAction="#btnAddStudentClicked" prefHeight="30.769230769" prefWidth="150.0" style="-fx-background-color: transparent; -fx-text-fill: #fff;" text="Add Student" />
-                  <Region prefHeight="30.769230769" prefWidth="150.0" />
-                  <Button fx:id="addInstractor" mnemonicParsing="false" onAction="#btnAddInterstractorClicked" prefHeight="30.769230769" prefWidth="150.0" style="-fx-background-color: transparent; -fx-text-fill: #fff;" text="Add Instractor" />
-                  <Region prefHeight="30.769230769" prefWidth="150.0" />
-                  <Button fx:id="searchPerson" mnemonicParsing="false" onAction="#searchPersonClicked" prefHeight="30.769230769" prefWidth="150.0" style="-fx-background-color: transparent; -fx-text-fill: #fff;" text="Search Person" />
-                  <Region prefHeight="30.769230769" prefWidth="150.0" />
-                  <Button mnemonicParsing="false" prefHeight="30.769230769" prefWidth="150.0" style="-fx-background-color: transparent; -fx-text-fill: #fff;" text="Search Course" />
-                  <Region prefHeight="30.769230769" prefWidth="150.0" />
-                  <Button mnemonicParsing="false" prefHeight="30.769230769" prefWidth="150.0" style="-fx-background-color: transparent; -fx-text-fill: #fff;" text="Display Persons" />
-                  <Region prefHeight="30.769230769" prefWidth="150.0" />
-                  <Button mnemonicParsing="false" prefHeight="30.769230769" prefWidth="150.0" style="-fx-background-color: transparent; -fx-text-fill: #fff;" text="Display Courses" />
-                  <Region prefHeight="30.769230769" prefWidth="150.0" />
+                  <Button fx:id="addStudent" mnemonicParsing="false" onAction="#addStudentClicked" prefHeight="30.769230769" prefWidth="150.0" style="-fx-background-color: transparent; -fx-text-fill: #fff;" text="Add Student" />
+                  <Button fx:id="addInstractor" mnemonicParsing="false" onAction="#addInstractorClicked" prefHeight="30.769230769" prefWidth="150.0" style="-fx-background-color: transparent; -fx-text-fill: #fff;" text="Add Instractor" />
+                  <Button fx:id="addCourse" mnemonicParsing="false" onAction="#addCourseClicked" prefHeight="30.769230769" prefWidth="150.0" style="-fx-background-color: transparent; -fx-text-fill: #fff;" text="Add Course" />
+                  <Button fx:id="searchSudent" mnemonicParsing="false" onAction="#searchStudentClicked" prefHeight="30.769230769" prefWidth="150.0" style="-fx-background-color: transparent; -fx-text-fill: #fff;" text="Search Student" />
+                  <Button fx:id="searchInstractor" mnemonicParsing="false" onAction="#searchInstractorClicked" prefHeight="30.769230769" prefWidth="150.0" style="-fx-background-color: transparent; -fx-text-fill: #fff;" text="Search Instractor" />
+                  <Button fx:id="searchCourse" mnemonicParsing="false" onAction="#searchCourseClicked" prefHeight="30.769230769" prefWidth="150.0" style="-fx-background-color: transparent; -fx-text-fill: #fff;" text="Search Course" />
+                  <Button fx:id="displayStudent" mnemonicParsing="false" onAction="#displayStudentClicked" prefHeight="30.769230769" prefWidth="150.0" style="-fx-background-color: transparent; -fx-text-fill: #fff;" text="Display Student" />
+                  <Button fx:id="displayInstactor" mnemonicParsing="false" onAction="#displayInstactorClicked" prefHeight="30.769230769" prefWidth="150.0" style="-fx-background-color: transparent; -fx-text-fill: #fff;" text="Display Instaractor" />
+                  <Button fx:id="displayCourses" mnemonicParsing="false" onAction="#displayCoursesClicked" prefHeight="30.769230769" prefWidth="150.0" style="-fx-background-color: transparent; -fx-text-fill: #fff;" text="Display Courses" />
                   <Button fx:id="logOut" mnemonicParsing="false" prefHeight="30.769230769" prefWidth="150.0" style="-fx-background-color: transparent; -fx-text-fill: #fff;" text="Log out" />
                </children></VBox>
             <VBox prefHeight="400.0" prefWidth="500.0">
@@ -45,7 +41,7 @@
                   </Pane>
                   <Pane prefHeight="310.0" prefWidth="475.0">
                      <children>
-                        <VBox fx:id="AddStudentBox" prefHeight="310.0" prefWidth="475.0" visible="false">
+                        <VBox fx:id="addStudentBox" prefHeight="310.0" prefWidth="475.0" visible="false">
                            <children>
                               <TextField fx:id="idSAdd" promptText="ID">
                                  <padding>
@@ -95,7 +91,7 @@
                               </Pane>
                            </children>
                         </VBox>
-                        <VBox fx:id="AddInstractorBox" prefHeight="310.0" prefWidth="475.0" visible="false">
+                        <VBox fx:id="addInstractorBox" prefHeight="310.0" prefWidth="475.0" visible="false">
                            <children>
                               <TextField fx:id="idIAdd" promptText="ID">
                                  <padding>
@@ -157,107 +153,13 @@
                               </Pane>
                            </children>
                         </VBox>
-                        <VBox fx:id="SearchPepoleBox" prefHeight="310.0" prefWidth="475.0">
-                           <children>
-                              <HBox prefHeight="53.0" prefWidth="475.0">
-                                 <children>
-                                    <TextField fx:id="idSearchID" prefHeight="36.0" prefWidth="315.0" promptText="ID">
-                                       <padding>
-                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
-                                       </padding>
-                                       <HBox.margin>
-                                          <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
-                                       </HBox.margin>
-                                    </TextField>
-                                    <Button fx:id="searchPersonbtn" mnemonicParsing="false" onAction="#searchPersonbtnClicked" prefHeight="36.0" prefWidth="127.0" style="-fx-background-color: #201854; -fx-text-fill: #fff;" text="Search">
-                                       <HBox.margin>
-                                          <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
-                                       </HBox.margin>
-                                       <padding>
-                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
-                                       </padding>
-                                    </Button>
-                                 </children>
-                              </HBox>
-                              <HBox prefHeight="54.0" prefWidth="475.0">
-                                 <children>
-                                    <Label prefHeight="36.0" prefWidth="127.0" style="-fx-text-fill: #201854;" text="Name" wrapText="true">
-                                       <HBox.margin>
-                                          <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
-                                       </HBox.margin>
-                                       <padding>
-                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
-                                       </padding></Label>
-                                    <TextField fx:id="nameSeachStudent" prefHeight="36.0" prefWidth="315.0">
-                                       <HBox.margin>
-                                          <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
-                                       </HBox.margin>
-                                       <padding>
-                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
-                                       </padding></TextField>
-                                 </children>
-                              </HBox>
-                              <HBox prefHeight="54.0" prefWidth="475.0">
-                                 <children>
-                                    <Label prefHeight="36.0" prefWidth="127.0" style="-fx-text-fill: #201854;" text="SSN" wrapText="true">
-                                       <HBox.margin>
-                                          <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
-                                       </HBox.margin>
-                                       <padding>
-                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
-                                       </padding></Label>
-                                    <TextField fx:id="ssnSeachStudent" prefHeight="36.0" prefWidth="315.0">
-                                       <HBox.margin>
-                                          <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
-                                       </HBox.margin>
-                                       <padding>
-                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
-                                       </padding></TextField>
-                                 </children>
-                              </HBox>
-                              <HBox prefHeight="54.0" prefWidth="475.0">
-                                 <children>
-                                    <Label prefHeight="36.0" prefWidth="127.0" style="-fx-text-fill: #201854;" text="Age" wrapText="true">
-                                       <HBox.margin>
-                                          <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
-                                       </HBox.margin>
-                                       <padding>
-                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
-                                       </padding></Label>
-                                    <TextField fx:id="ageSeachStudent" prefHeight="36.0" prefWidth="315.0">
-                                       <HBox.margin>
-                                          <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
-                                       </HBox.margin>
-                                       <padding>
-                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
-                                       </padding></TextField>
-                                 </children>
-                              </HBox>
-                              <HBox prefHeight="54.0" prefWidth="475.0">
-                                 <children>
-                                    <Label prefHeight="36.0" prefWidth="127.0" style="-fx-text-fill: #201854;" text="Cources" wrapText="true">
-                                       <HBox.margin>
-                                          <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
-                                       </HBox.margin>
-                                       <padding>
-                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
-                                       </padding></Label>
-                                    <TextField fx:id="coursesSeachStudent" prefHeight="36.0" prefWidth="315.0">
-                                       <HBox.margin>
-                                          <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
-                                       </HBox.margin>
-                                       <padding>
-                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
-                                       </padding></TextField>
-                                 </children>
-                              </HBox>
-                              <Pane prefHeight="200.0" prefWidth="200.0">
-                                 <children>
-                                    <Button fx:id="CancelSearchPerson" layoutX="234.0" layoutY="12.0" mnemonicParsing="false" onAction="#CancelSearchPersonClicked" prefHeight="36.0" prefWidth="100.0" style="-fx-background-color: #201854; -fx-text-fill: #fff;" text="Cancel" />
-                                    <Button fx:id="DeleteSearchPerson" layoutX="359.0" layoutY="12.0" mnemonicParsing="false" onAction="#DeleteSearchPersonClicked" prefHeight="36.0" prefWidth="100.0" style="-fx-background-color: #201854; -fx-text-fill: #fff;" text="Delete" />
-                                 </children>
-                              </Pane>
-                           </children></VBox>
+                        <VBox fx:id="addCoursesBox" prefHeight="310.0" prefWidth="475.0" visible="false" />
+                        <VBox fx:id="searchStudentBox" prefHeight="310.0" prefWidth="475.0" visible="false" />
+                        <VBox fx:id="searchInstractorBox" prefHeight="310.0" prefWidth="475.0" visible="false" />
+                        <VBox fx:id="searchCoursesBox" prefHeight="310.0" prefWidth="475.0" visible="false" />
+                        <VBox fx:id="displayStudentBox" prefHeight="310.0" prefWidth="475.0" visible="false" />
+                        <VBox fx:id="displayInstractorBox" prefHeight="310.0" prefWidth="475.0" visible="false" />
+                        <VBox fx:id="displayCoursesBox" prefHeight="310.0" prefWidth="475.0" visible="false" />
                      </children>
                   </Pane>
                </children></VBox>

@@ -21,42 +21,134 @@ public class AdminFrame extends Application {
     public static Stage stage;
 
     @FXML
+    //BOXES
+    public VBox addStudentBox;
+    public VBox addInstractorBox;
+    public VBox addCoursesBox;
+    public VBox searchStudentBox;
+    public VBox searchInstractorBox;
+    public VBox searchCoursesBox;
+    public VBox displayStudentBox;
+    public VBox displayInstractorBox;
+    public VBox displayCoursesBox;
+
+    //Slider
     public Button addStudent;
+    public void addStudentClicked() {
+        addStudentBox.setVisible(true);
+        addInstractorBox.setVisible(false);
+        addCoursesBox.setVisible(false);
+        searchStudentBox.setVisible(false);
+        searchInstractorBox.setVisible(false);
+        searchCoursesBox.setVisible(false);
+        displayStudentBox.setVisible(false);
+        displayInstractorBox.setVisible(false);
+        displayCoursesBox.setVisible(false);
+    }
     public Button addInstractor;
+    public void addInstractorClicked() {
+        addStudentBox.setVisible(false);
+        addInstractorBox.setVisible(true);
+        addCoursesBox.setVisible(false);
+        searchStudentBox.setVisible(false);
+        searchInstractorBox.setVisible(false);
+        searchCoursesBox.setVisible(false);
+        displayStudentBox.setVisible(false);
+        displayInstractorBox.setVisible(false);
+        displayCoursesBox.setVisible(false);
+    }
+    public Button addCourse;
+    public void addCourseClicked() {
+        addStudentBox.setVisible(false);
+        addInstractorBox.setVisible(false);
+        addCoursesBox.setVisible(true);
+        searchStudentBox.setVisible(false);
+        searchInstractorBox.setVisible(false);
+        searchCoursesBox.setVisible(false);
+        displayStudentBox.setVisible(false);
+        displayInstractorBox.setVisible(false);
+        displayCoursesBox.setVisible(false);
+    }
+    public Button searchSudent;
+    public void searchStudentClicked() {
+        addStudentBox.setVisible(false);
+        addInstractorBox.setVisible(false);
+        addCoursesBox.setVisible(false);
+        searchStudentBox.setVisible(true);
+        searchInstractorBox.setVisible(false);
+        searchCoursesBox.setVisible(false);
+        displayStudentBox.setVisible(false);
+        displayInstractorBox.setVisible(false);
+        displayCoursesBox.setVisible(false);
+    }
+    public Button searchInstractor;
+    public void searchInstractorClicked() {
+        addStudentBox.setVisible(false);
+        addInstractorBox.setVisible(false);
+        addCoursesBox.setVisible(false);
+        searchStudentBox.setVisible(false);
+        searchInstractorBox.setVisible(true);
+        searchCoursesBox.setVisible(false);
+        displayStudentBox.setVisible(false);
+        displayInstractorBox.setVisible(false);
+        displayCoursesBox.setVisible(false);
+    }
+    public Button searchCourse;
+    public void searchCourseClicked() {
+        addStudentBox.setVisible(false);
+        addInstractorBox.setVisible(false);
+        addCoursesBox.setVisible(false);
+        searchStudentBox.setVisible(false);
+        searchInstractorBox.setVisible(false);
+        searchCoursesBox.setVisible(true);
+        displayStudentBox.setVisible(false);
+        displayInstractorBox.setVisible(false);
+        displayCoursesBox.setVisible(false);
+    }
+    public Button displayStudent;
+    public void  displayStudentClicked() {
+        addStudentBox.setVisible(false);
+        addInstractorBox.setVisible(false);
+        addCoursesBox.setVisible(false);
+        searchStudentBox.setVisible(false);
+        searchInstractorBox.setVisible(false);
+        searchCoursesBox.setVisible(false);
+        displayStudentBox.setVisible(true);
+        displayInstractorBox.setVisible(false);
+        displayCoursesBox.setVisible(false);
+    }
+    public Button displayInstactor;
+    public void  displayInstactorClicked() {
+        addStudentBox.setVisible(false);
+        addInstractorBox.setVisible(false);
+        addCoursesBox.setVisible(false);
+        searchStudentBox.setVisible(false);
+        searchInstractorBox.setVisible(false);
+        searchCoursesBox.setVisible(false);
+        displayStudentBox.setVisible(false);
+        displayInstractorBox.setVisible(true);
+        displayCoursesBox.setVisible(false);
+    }
+    public Button displayCourses;
+    public void  displayCoursesClicked() {
+        addStudentBox.setVisible(false);
+        addInstractorBox.setVisible(false);
+        addCoursesBox.setVisible(false);
+        searchStudentBox.setVisible(false);
+        searchInstractorBox.setVisible(false);
+        searchCoursesBox.setVisible(false);
+        displayStudentBox.setVisible(false);
+        displayInstractorBox.setVisible(false);
+        displayCoursesBox.setVisible(true);
+    }
+
+    //Add Student
+    @FXML
     public TextField idSAdd;
     public TextField nameSAdd;
     public TextField ssnSAdd;
     public TextField ageSAdd;
-    public PasswordField passSAdd;
-    public TextField idIAdd;
-    public TextField nameIAdd;
-    public TextField ssnIAdd;
-    public TextField ageIAdd;
-    public TextField salaryIAdd;
-    public PasswordField passIAdd;
-    public Button btnStudentAdd;
-    public Button btnStudentCancel;
-    public VBox AddStudentBox;
-    public VBox AddInstractorBox;
-    public VBox SearchPepoleBox;
-    public Button btnInstractorAdd;
-    public Button btnInstractorCancel;
-    public Button searchPersonbtn;
-    public TextField idSearchID;
-    public Button logOut;
-    public TextField nameSeachStudent;
-    public TextField ssnSeachStudent;
-    public TextField ageSeachStudent;
-    public TextField coursesSeachStudent;
-
-    //Add Student
-    @FXML
-    public void btnAddStudentClicked() {
-        AddStudentBox.setVisible(true);
-        AddInstractorBox.setVisible(false);
-        SearchPepoleBox.setVisible(false);
-    }
-    @FXML
+    public TextField passSAdd;
     public void BtnAddStudentClicked() {
         try {
             if (new Admin_Imp().addStudent(Integer.parseInt(idSAdd.getText()), nameSAdd.getText(), passSAdd.getText(), Integer.parseInt(ageSAdd.getText()), Double.parseDouble(ssnSAdd.getText()))) {
@@ -68,7 +160,6 @@ public class AdminFrame extends Application {
             showErrMess("ID, Age and SSN must be Numbers");
         }
     }
-    @FXML
     public void BtnCancelStudentClicked() {
         idSAdd.setText("");
         nameSAdd.setText("");
@@ -79,14 +170,13 @@ public class AdminFrame extends Application {
 
     //Add Instractor
     @FXML
-    public void btnAddInterstractorClicked() {
-        AddStudentBox.setVisible(false);
-        AddInstractorBox.setVisible(true);
-        SearchPepoleBox.setVisible(false);
-    }
-    @FXML
+    public TextField idIAdd;
+    public TextField nameIAdd;
+    public TextField ssnIAdd;
+    public TextField ageIAdd;
+    public TextField passIAdd;
+    public TextField salaryIAdd;
     public void BtnAddInstractorClicked() {
-        //public boolean addStudent(int id, String name, String pass, int age, double ssn)
         try {
             if (new Admin_Imp().addInstractor(Integer.parseInt(idIAdd.getText()), nameIAdd.getText(), passIAdd.getText(), Integer.parseInt(ageIAdd.getText()), Double.parseDouble(ssnIAdd.getText()), Double.parseDouble(salaryIAdd.getText()))) {
                 showinfoMess("Added Successfully");
@@ -97,7 +187,6 @@ public class AdminFrame extends Application {
             showErrMess("ID, Age and SSN must be Numbers");
         }
     }
-    @FXML
     public void BtnCancelInstractorClicked() {
         idIAdd.setText("");
         nameIAdd.setText("");
@@ -106,30 +195,8 @@ public class AdminFrame extends Application {
         passIAdd.setText("");
     }
 
-    //Search Person
-    @FXML
-    public void searchPersonClicked() {
-        AddStudentBox.setVisible(false);
-        AddInstractorBox.setVisible(false);
-        SearchPepoleBox.setVisible(true);
-    }
-    public void searchPersonbtnClicked() {
-        Student s = new Student().searchStudent(Integer.parseInt(idSearchID.getText()));
-        if (!(s.getAge() == 0)) {
-            nameSeachStudent.setText(s.getName());
-            ssnSeachStudent.setText(Double.toString(s.getSSN()));
-            ageSeachStudent.setText(Integer.toString(s.getAge()));
-            // ToDo SSN issue in casting to String
-            // ToDo coursesSeachStudent.setText();
-        } else {
-            showErrMess("Student Not Found");
-        }
-    }
-
-    //LogOut
-    public void logOutClicked() {
-        //ToDo Close This Frame, and Open Th Login Frame
-    }
+    //Add Courses
+    //ToDo Stoped Here
 
     public static void main(String[] args) {
         launch(args);
