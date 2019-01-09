@@ -40,6 +40,8 @@ public class AdminFrame extends Application {
     public VBox SearchPepoleBox;
     public Button btnInstractorAdd;
     public Button btnInstractorCancel;
+    public Button searchPersonbtn;
+    public TextField idSearchID;
 
     //Add Student
     @FXML
@@ -105,6 +107,11 @@ public class AdminFrame extends Application {
         AddStudentBox.setVisible(false);
         AddInstractorBox.setVisible(false);
         SearchPepoleBox.setVisible(true);
+    }
+    public void searchPersonbtnClicked() {
+        Student s = new Admin_Imp().SeachStudentImp(Integer.parseInt(idSearchID.getText()));
+        //ToDo Create a TextFields
+        //ToDo put the s attribute in the textFields
     }
 
     public static void main(String[] args) {

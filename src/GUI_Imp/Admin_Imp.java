@@ -23,4 +23,9 @@ public class Admin_Imp {
         } return false;
     }
 
+    public Student SeachStudentImp(int id) {
+        //ToDo Finish The Method
+        return new Student();
+    }
+
 }
