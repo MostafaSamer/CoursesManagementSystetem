@@ -42,6 +42,7 @@ public class AdminFrame extends Application {
     public Button btnInstractorCancel;
     public Button searchPersonbtn;
     public TextField idSearchID;
+    public Button logOut;
 
     //Add Student
     @FXML
@@ -112,6 +113,11 @@ public class AdminFrame extends Application {
         Student s = new Admin_Imp().SeachStudentImp(Integer.parseInt(idSearchID.getText()));
         //ToDo Create a TextFields
         //ToDo put the s attribute in the textFields
+    }
+
+    //LogOut
+    public void logOutClicked() {
+        //ToDo Close This Frame, and Open Th Login Frame
     }
 
     public static void main(String[] args) {

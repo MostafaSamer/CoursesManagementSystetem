@@ -29,7 +29,7 @@
                   <Region prefHeight="30.769230769" prefWidth="150.0" />
                   <Button mnemonicParsing="false" prefHeight="30.769230769" prefWidth="150.0" style="-fx-background-color: transparent; -fx-text-fill: #fff;" text="Display Courses" />
                   <Region prefHeight="30.769230769" prefWidth="150.0" />
-                  <Button mnemonicParsing="false" prefHeight="30.769230769" prefWidth="150.0" style="-fx-background-color: transparent; -fx-text-fill: #fff;" text="Log out" />
+                  <Button fx:id="logOut" mnemonicParsing="false" prefHeight="30.769230769" prefWidth="150.0" style="-fx-background-color: transparent; -fx-text-fill: #fff;" text="Log out" />
                </children></VBox>
             <VBox prefHeight="400.0" prefWidth="500.0">
                <children>
