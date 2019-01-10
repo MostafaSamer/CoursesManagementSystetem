@@ -8,28 +8,39 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.Region?>
 <?import javafx.scene.layout.VBox?>
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI_fx.AdminFrame">
    <children>
       <HBox prefHeight="400.0" prefWidth="600.0">
          <children>
-            <VBox fx:id="adminSlider" prefHeight="400.0" prefWidth="150.0" style="-fx-background-color: #201854;">
+            <VBox fx:id="adminSlider" prefHeight="400.0" prefWidth="185.0" style="-fx-background-color: #201854;">
                <children>
-                  <Button fx:id="addStudent" mnemonicParsing="false" onAction="#addStudentClicked" prefHeight="30.769230769" prefWidth="150.0" style="-fx-background-color: transparent; -fx-text-fill: #fff;" text="Add Student" />
-                  <Button fx:id="addInstractor" mnemonicParsing="false" onAction="#addInstractorClicked" prefHeight="30.769230769" prefWidth="150.0" style="-fx-background-color: transparent; -fx-text-fill: #fff;" text="Add Instractor" />
-                  <Button fx:id="addCourse" mnemonicParsing="false" onAction="#addCourseClicked" prefHeight="30.769230769" prefWidth="150.0" style="-fx-background-color: transparent; -fx-text-fill: #fff;" text="Add Course" />
-                  <Button fx:id="searchSudent" mnemonicParsing="false" onAction="#searchStudentClicked" prefHeight="30.769230769" prefWidth="150.0" style="-fx-background-color: transparent; -fx-text-fill: #fff;" text="Search Student" />
-                  <Button fx:id="searchInstractor" mnemonicParsing="false" onAction="#searchInstractorClicked" prefHeight="30.769230769" prefWidth="150.0" style="-fx-background-color: transparent; -fx-text-fill: #fff;" text="Search Instractor" />
-                  <Button fx:id="searchCourse" mnemonicParsing="false" onAction="#searchCourseClicked" prefHeight="30.769230769" prefWidth="150.0" style="-fx-background-color: transparent; -fx-text-fill: #fff;" text="Search Course" />
-                  <Button fx:id="displayStudent" mnemonicParsing="false" onAction="#displayStudentClicked" prefHeight="30.769230769" prefWidth="150.0" style="-fx-background-color: transparent; -fx-text-fill: #fff;" text="Display Student" />
-                  <Button fx:id="displayInstactor" mnemonicParsing="false" onAction="#displayInstactorClicked" prefHeight="30.769230769" prefWidth="150.0" style="-fx-background-color: transparent; -fx-text-fill: #fff;" text="Display Instaractor" />
-                  <Button fx:id="displayCourses" mnemonicParsing="false" onAction="#displayCoursesClicked" prefHeight="30.769230769" prefWidth="150.0" style="-fx-background-color: transparent; -fx-text-fill: #fff;" text="Display Courses" />
-                  <Button fx:id="logOut" mnemonicParsing="false" prefHeight="30.769230769" prefWidth="150.0" style="-fx-background-color: transparent; -fx-text-fill: #fff;" text="Log out" />
+                  <Region prefHeight="10.0" prefWidth="185.0" />
+                  <Button fx:id="addStudent" mnemonicParsing="false" onAction="#addStudentClicked" prefHeight="30.0" prefWidth="185.0" style="-fx-background-color: transparent; -fx-text-fill: #fff;" text="Add Student" />
+                  <Region prefHeight="10.0" prefWidth="185.0" />
+                  <Button fx:id="addInstractor" mnemonicParsing="false" onAction="#addInstractorClicked" prefHeight="30.0" prefWidth="185.0" style="-fx-background-color: transparent; -fx-text-fill: #fff;" text="Add Instractor" />
+                  <Region prefHeight="10.0" prefWidth="185.0" />
+                  <Button fx:id="addCourse" mnemonicParsing="false" onAction="#addCourseClicked" prefHeight="30.0" prefWidth="185.0" style="-fx-background-color: transparent; -fx-text-fill: #fff;" text="Add Course" />
+                  <Region prefHeight="10.0" prefWidth="185.0" />
+                  <Button fx:id="searchSudent" mnemonicParsing="false" onAction="#searchStudentClicked" prefHeight="30.0" prefWidth="185.0" style="-fx-background-color: transparent; -fx-text-fill: #fff;" text="Search Student" />
+                  <Region prefHeight="10.0" prefWidth="185.0" />
+                  <Button fx:id="searchInstractor" mnemonicParsing="false" onAction="#searchInstractorClicked" prefHeight="30.0" prefWidth="185.0" style="-fx-background-color: transparent; -fx-text-fill: #fff;" text="Search Instractor" />
+                  <Region prefHeight="10.0" prefWidth="185.0" />
+                  <Button fx:id="searchCourse" mnemonicParsing="false" onAction="#searchCourseClicked" prefHeight="30.0" prefWidth="185.0" style="-fx-background-color: transparent; -fx-text-fill: #fff;" text="Search Course" />
+                  <Region prefHeight="10.0" prefWidth="185.0" />
+                  <Button fx:id="displayStudent" mnemonicParsing="false" onAction="#displayStudentClicked" prefHeight="30.0" prefWidth="185.0" style="-fx-background-color: transparent; -fx-text-fill: #fff;" text="Display Student" />
+                  <Region prefHeight="10.0" prefWidth="185.0" />
+                  <Button fx:id="displayInstactor" mnemonicParsing="false" onAction="#displayInstactorClicked" prefHeight="30.0" prefWidth="185.0" style="-fx-background-color: transparent; -fx-text-fill: #fff;" text="Display Instaractor" />
+                  <Region prefHeight="10.0" prefWidth="185.0" />
+                  <Button fx:id="displayCourses" mnemonicParsing="false" onAction="#displayCoursesClicked" prefHeight="30.0" prefWidth="185.0" style="-fx-background-color: transparent; -fx-text-fill: #fff;" text="Display Courses" />
+                  <Region prefHeight="10.0" prefWidth="185.0" />
+                  <Button fx:id="logOut" mnemonicParsing="false" prefHeight="30.0" prefWidth="185.0" style="-fx-background-color: transparent; -fx-text-fill: #fff;" text="Log out" />
                </children></VBox>
-            <VBox prefHeight="400.0" prefWidth="500.0">
+            <VBox prefHeight="400.0" prefWidth="415.0">
                <children>
-                  <Pane prefHeight="90.0" prefWidth="500.0">
+                  <Pane prefHeight="90.0" prefWidth="415.0">
                      <children>
                         <Label layoutX="14.0" layoutY="14.0" prefHeight="40.0" prefWidth="115.0" style="-fx-font-size: 20; -fx-text-fill: #201854;" text="Admin">
                            <padding>
@@ -39,11 +50,11 @@
                         <Pane layoutX="21.0" layoutY="48.0" prefHeight="5.0" prefWidth="200.0" style="-fx-background-color: #201854;" />
                      </children>
                   </Pane>
-                  <Pane prefHeight="310.0" prefWidth="475.0">
+                  <Pane prefHeight="310.0" prefWidth="415.0">
                      <children>
-                        <VBox fx:id="addStudentBox" prefHeight="310.0" prefWidth="475.0" visible="false">
+                        <VBox fx:id="addStudentBox" prefHeight="310.0" prefWidth="415.0" visible="false">
                            <children>
-                              <TextField fx:id="idSAdd" promptText="ID">
+                              <TextField fx:id="idSAdd" prefWidth="415.0" promptText="ID">
                                  <padding>
                                     <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                                  </padding>
@@ -51,7 +62,7 @@
                                     <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
                                  </VBox.margin>
                               </TextField>
-                              <PasswordField fx:id="passSAdd" promptText="Password">
+                              <PasswordField fx:id="passSAdd" prefWidth="415.0" promptText="Password">
                                  <padding>
                                     <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                                  </padding>
@@ -59,7 +70,7 @@
                                     <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
                                  </VBox.margin>
                               </PasswordField>
-                              <TextField fx:id="nameSAdd" promptText="Name">
+                              <TextField fx:id="nameSAdd" prefWidth="415.0" promptText="Name">
                                  <padding>
                                     <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                                  </padding>
@@ -67,7 +78,7 @@
                                     <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
                                  </VBox.margin>
                               </TextField>
-                              <TextField fx:id="ssnSAdd" promptText="SSN">
+                              <TextField fx:id="ssnSAdd" prefWidth="415.0" promptText="SSN">
                                  <padding>
                                     <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                                  </padding>
@@ -75,7 +86,7 @@
                                     <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
                                  </VBox.margin>
                               </TextField>
-                              <TextField fx:id="ageSAdd" prefHeight="36.0" prefWidth="239.0" promptText="Age">
+                              <TextField fx:id="ageSAdd" prefHeight="36.0" prefWidth="415.0" promptText="Age">
                                  <padding>
                                     <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                                  </padding>
@@ -83,15 +94,15 @@
                                     <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
                                  </VBox.margin>
                               </TextField>
-                              <Pane prefHeight="200.0" prefWidth="200.0">
+                              <Pane prefHeight="200.0" prefWidth="415.0">
                                  <children>
-                                    <Button fx:id="btnStudentCancel" layoutX="234.0" layoutY="12.0" mnemonicParsing="false" onAction="#BtnCancelStudentClicked" prefHeight="36.0" prefWidth="100.0" style="-fx-background-color: #201854; -fx-text-fill: #fff;" text="Cancel" />
-                                    <Button fx:id="btnStudentAdd" layoutX="359.0" layoutY="12.0" mnemonicParsing="false" onAction="#BtnAddStudentClicked" prefHeight="36.0" prefWidth="100.0" style="-fx-background-color: #201854; -fx-text-fill: #fff;" text="Add" />
+                                    <Button fx:id="btnStudentCancel" layoutX="176.0" layoutY="12.0" mnemonicParsing="false" onAction="#BtnCancelStudentClicked" prefHeight="36.0" prefWidth="100.0" style="-fx-background-color: #201854; -fx-text-fill: #fff;" text="Cancel" />
+                                    <Button fx:id="btnStudentAdd" layoutX="301.0" layoutY="12.0" mnemonicParsing="false" onAction="#BtnAddStudentClicked" prefHeight="36.0" prefWidth="100.0" style="-fx-background-color: #201854; -fx-text-fill: #fff;" text="Add" />
                                  </children>
                               </Pane>
                            </children>
                         </VBox>
-                        <VBox fx:id="addInstractorBox" prefHeight="310.0" prefWidth="475.0" visible="false">
+                        <VBox fx:id="addInstractorBox" prefHeight="310.0" prefWidth="415.0" visible="false">
                            <children>
                               <TextField fx:id="idIAdd" promptText="ID">
                                  <padding>
@@ -147,19 +158,19 @@
                               </HBox>
                               <Pane prefHeight="200.0" prefWidth="200.0">
                                  <children>
-                                    <Button fx:id="btnInstractorCancel" layoutX="234.0" layoutY="12.0" mnemonicParsing="false" onAction="#BtnCancelInstractorClicked" prefHeight="36.0" prefWidth="100.0" style="-fx-background-color: #201854; -fx-text-fill: #fff;" text="Cancel" />
-                                    <Button fx:id="btnInstractorAdd" layoutX="359.0" layoutY="12.0" mnemonicParsing="false" onAction="#BtnAddInstractorClicked" prefHeight="36.0" prefWidth="100.0" style="-fx-background-color: #201854; -fx-text-fill: #fff;" text="Add" />
+                                    <Button fx:id="btnInstractorCancel" layoutX="182.0" layoutY="12.0" mnemonicParsing="false" onAction="#BtnCancelInstractorClicked" prefHeight="36.0" prefWidth="100.0" style="-fx-background-color: #201854; -fx-text-fill: #fff;" text="Cancel" />
+                                    <Button fx:id="btnInstractorAdd" layoutX="301.0" layoutY="12.0" mnemonicParsing="false" onAction="#BtnAddInstractorClicked" prefHeight="36.0" prefWidth="100.0" style="-fx-background-color: #201854; -fx-text-fill: #fff;" text="Add" />
                                  </children>
                               </Pane>
                            </children>
                         </VBox>
-                        <VBox fx:id="addCoursesBox" prefHeight="310.0" prefWidth="475.0" visible="false" />
-                        <VBox fx:id="searchStudentBox" prefHeight="310.0" prefWidth="475.0" visible="false" />
-                        <VBox fx:id="searchInstractorBox" prefHeight="310.0" prefWidth="475.0" visible="false" />
-                        <VBox fx:id="searchCoursesBox" prefHeight="310.0" prefWidth="475.0" visible="false" />
-                        <VBox fx:id="displayStudentBox" prefHeight="310.0" prefWidth="475.0" visible="false" />
-                        <VBox fx:id="displayInstractorBox" prefHeight="310.0" prefWidth="475.0" visible="false" />
-                        <VBox fx:id="displayCoursesBox" prefHeight="310.0" prefWidth="475.0" visible="false" />
+                        <VBox fx:id="addCoursesBox" prefHeight="310.0" prefWidth="415.0" />
+                        <VBox fx:id="searchStudentBox" prefHeight="310.0" prefWidth="415.0" visible="false" />
+                        <VBox fx:id="searchInstractorBox" prefHeight="310.0" prefWidth="415.0" visible="false" />
+                        <VBox fx:id="searchCoursesBox" prefHeight="310.0" prefWidth="415.0" visible="false" />
+                        <VBox fx:id="displayStudentBox" prefHeight="310.0" prefWidth="415.0" visible="false" />
+                        <VBox fx:id="displayInstractorBox" prefHeight="310.0" prefWidth="415.0" visible="false" />
+                        <VBox fx:id="displayCoursesBox" prefHeight="310.0" prefWidth="415.0" visible="false" />
                      </children>
                   </Pane>
                </children></VBox>
