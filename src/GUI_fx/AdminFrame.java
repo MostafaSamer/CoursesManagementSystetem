@@ -15,10 +15,13 @@ import javafx.scene.layout.VBox;
 import javafx.stage.*;
 
 import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 public class AdminFrame extends Application {
 
     public static Stage stage;
+    SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
 
     @FXML
     //BOXES
@@ -56,6 +59,8 @@ public class AdminFrame extends Application {
         displayStudentBox.setVisible(false);
         displayInstractorBox.setVisible(false);
         displayCoursesBox.setVisible(false);
+        // ToDo Think for a way to Add All Instractor to the menu after clicking/
+        // ToDo Think for a way to Store the instractor and the Student of the single Course
     }
     public Button addCourse;
     public void addCourseClicked() {
@@ -196,7 +201,32 @@ public class AdminFrame extends Application {
     }
 
     //Add Courses
+    @FXML
+    public TextField nameCAdd;
+    public TextField codeCAdd;
+    public TextField priceCAdd;
+    public TextField gradeCAdd;
+    public MenuButton startDateCAdd;
+    public MenuButton endDateCAdd;
+    public Button btnCourseAdd;
+    public void btnCourseAddClicked() {
+        try {
+            //public Courses(String name, int code, Double price, Double grade, Date startDate, Date endDate) {
+            if (new Admin_Imp().addCourse(nameCAdd.getText(), Integer.parseInt(codeCAdd.getText()), Double.parseDouble(priceCAdd.getText()), Double.parseDouble(gradeCAdd.getText()), format.parse(startDateCAdd.getText()), format.parse(endDateCAdd.getText()))) {
+                showinfoMess("Added Successfully");
+            } else {
+                showErrMess("ID is Taken");
+            }
+        } catch (NumberFormatException e) {
+            showErrMess("Price, Grade and Code must be Numbers");
+        } catch (Exception e) {
+            showErrMess("Date Error");
+        }
+    }
+    public Button btnCourseCancel;
+    public void btnCourseCancelClicked() {
 
+    }
 
     public static void main(String[] args) {
         launch(args);
