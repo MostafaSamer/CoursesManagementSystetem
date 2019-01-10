@@ -113,7 +113,7 @@ public class Courses implements Serializable {
 
         LoadFromFile();
         if(courses.get(ID) != null) {
-            courses.putIfAbsent(ID, this);
+            courses.replace(ID, this);
             return CommitToFile();
         }
         return false;

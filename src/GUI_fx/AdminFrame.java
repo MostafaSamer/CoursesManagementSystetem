@@ -228,6 +228,62 @@ public class AdminFrame extends Application {
 
     }
 
+    //SearchStudent
+    public TextField idSSearch;
+    public TextField nameSSearch;
+    public TextField ssnSSearch;
+    public TextField ageSSearch;
+    public TextField courseSSearch;
+    public Button btnStudentSearch;
+    public void btnStudentSearchClicked() {
+        try {
+            if (!(new Admin_Imp().searchStudent(Integer.parseInt(idSSearch.getText())).getAge() == 0)) {
+                Student s = new Admin_Imp().searchStudent(Integer.parseInt(idSSearch.getText()));
+                nameSSearch.setText(s.getName());
+                ssnSSearch.setText(Double.toString(s.getSSN()));
+                ageSSearch.setText((Integer.toString(s.getAge())));
+               // nameSSearch.setText(s.getName());
+            } else {
+                showErrMess("User Not Found");
+            }
+        } catch (NumberFormatException e) {
+            showErrMess("ID must be a Number");
+        }
+    }
+    public Button btnStudentUpdate;
+    public void btnStudentUpdateClicked() {
+        try {
+            if (!(new Admin_Imp().searchStudent(Integer.parseInt(idSSearch.getText())).getAge() == 0)) {
+                Student s = new Admin_Imp().searchStudent(Integer.parseInt(idSSearch.getText()));
+                s.setName(nameSSearch.getText());
+                s.setAge(Integer.parseInt(ageSSearch.getText()));
+                s.setSSN(Double.parseDouble(ssnSSearch.getText()));
+                s.UpdateStudent(Integer.parseInt(idSSearch.getText()));
+                showinfoMess("Updated");
+                // nameSSearch.setText(s.getName());
+            } else {
+                showErrMess("User Not Found");
+            }
+        } catch (NumberFormatException e) {
+            showErrMess("ID must be a Number");
+        }
+    }
+    public Button btnStudentDelete;
+    public void btnStudentDeleteClicked() {
+        try {
+            if (!(new Admin_Imp().searchStudent(Integer.parseInt(idSSearch.getText())).getAge() == 0)) {
+                new Student().DeleteStudent(Integer.parseInt(idSSearch.getText()));
+                showinfoMess("Deleted");
+                // nameSSearch.setText(s.getName());
+            } else {
+                showErrMess("User Not Found");
+            }
+        } catch (NumberFormatException e) {
+            showErrMess("ID must be a Number");
+        }
+    }
+
+    //ToDo Make a Method to empty all textField
     public static void main(String[] args) {
         launch(args);
     }
@@ -254,13 +310,13 @@ public class AdminFrame extends Application {
 
     public void showErrMess(String mess) {
         Alert alert = new Alert(Alert.AlertType.ERROR);
-        alert.setHeaderText(mess);
+        alert.setHeaderText(mess + " :(");
         alert.showAndWait();
     }
 
     public void showinfoMess(String mess) {
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
-        alert.setHeaderText(mess);
+        alert.setHeaderText(mess + " :)");
         alert.showAndWait();
     }
 

@@ -65,7 +65,7 @@ public class Instractor extends Person implements Serializable {
 
         LoadFromFile();
         if(instractors.get(ID) != null) {
-            instractors.putIfAbsent(ID, this);
+            instractors.replace(ID, this);
             return CommitToFile();
         }
         return false;

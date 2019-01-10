@@ -59,7 +59,7 @@ public class Student extends Person implements Serializable {
 
         LoadFromFile();
         if(student.get(ID) != null) {
-            student.putIfAbsent(ID, this);
+            student.replace(ID, this);
             return CommitToFile();
         }
         return false;

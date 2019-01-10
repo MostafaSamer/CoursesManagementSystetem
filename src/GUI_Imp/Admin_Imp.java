@@ -42,4 +42,9 @@ public class Admin_Imp {
         return false;
     }
 
+    public Student searchStudent(int ID) {
+        Student s = new Student();
+        return s.searchStudent(ID);
+    }
+
 }
