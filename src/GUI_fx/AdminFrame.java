@@ -284,8 +284,7 @@ public class AdminFrame extends Application {
     public Button btnStudentDelete;
     public void btnStudentDeleteClicked() {
         try {
-            if (!(new Admin_Imp().searchStudent(Integer.parseInt(idSSearch.getText())).getAge() == 0)) {
-                new Student().DeleteStudent(Integer.parseInt(idSSearch.getText()));
+            if (new Student().DeleteStudent(Integer.parseInt(idSSearch.getText()))) {
                 showinfoMess("Deleted");
                 resetAll();
                 // nameSSearch.setText(s.getName());
@@ -341,8 +340,7 @@ public class AdminFrame extends Application {
     public Button btnInstractorDelete;
     public void btnInstractorDeleteClicked() {
         try {
-            if (!(new Admin_Imp().searchInstractor(Integer.parseInt(idISearch.getText())).getAge() == 0)) {
-                new Student().DeleteStudent(Integer.parseInt(idISearch.getText()));
+            if (new Student().DeleteStudent(Integer.parseInt(idISearch.getText()))) {
                 showinfoMess("Deleted");
                 resetAll();
                 // nameSSearch.setText(s.getName());
@@ -354,7 +352,33 @@ public class AdminFrame extends Application {
         }
     }
     //Search Courses
-    // ToDo where i stoped last time
+    public TextField idCSearch;
+    public TextField nameCSearch;
+    public TextField priceCSearch;
+    public TextField gradeCSearch;
+    public Button btnCoursesSearch;
+    public void btnCoursesSearchClicked() {
+        //ToDo CheckPoint :)
+    }
+    public Button btnCoursesUpdate;
+    public void btnCoursesUpdateClicked() {
+
+    }
+    public Button btnCoursesDelete;
+    public void btnCoursesDeleteClicked() {
+        try {
+            if (new Courses().DeleteCourses(Integer.parseInt(idCSearch.getText()))) {
+                showinfoMess("Deleted");
+                resetAll();
+                // nameSSearch.setText(s.getName());
+            } else {
+                showErrMess("User Not Found");
+            }
+        } catch (NumberFormatException e) {
+            showErrMess("ID must be a Number");
+        }
+    }
+
 
     public void resetAll() {
         idSAdd.setText("");
