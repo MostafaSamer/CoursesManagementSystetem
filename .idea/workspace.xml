@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="Still Coding">
-      <change beforePath="$PROJECT_DIR$/src/GUI_fx/AdminFrame.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI_fx/AdminFrame.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GUI_fx/AdminFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI_fx/AdminFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/Exeption.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Exeption.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/FileManger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/FileManger.java" afterDir="false" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -67,57 +68,52 @@
     <favorites_list name="JavaFxApplication" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.6798179">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/GUI_fx/AdminFrame.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="255">
-                  <caret line="360" column="28" lean-forward="true" selection-start-line="360" selection-start-column="28" selection-end-line="360" selection-end-column="28" />
-                  <folding>
-                    <element signature="e#14306#14307#0" expanded="true" />
-                    <element signature="e#14334#14335#0" expanded="true" />
-                    <element signature="e#14393#14394#0" expanded="true" />
-                    <element signature="e#14423#14424#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/GUI_Imp/Admin_Imp.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="574">
-                  <caret line="44" column="19" selection-start-line="44" selection-start-column="19" selection-end-line="44" selection-end-column="19" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                    <element signature="e#1294#1295#0" expanded="true" />
-                    <element signature="e#1322#1323#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/Main/Courses.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="240">
-                  <caret line="117" column="9" lean-forward="true" selection-start-line="117" selection-start-column="9" selection-end-line="117" selection-end-column="9" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/GUI_fx/AdminFrame.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="299">
+              <caret line="291" column="42" lean-forward="true" selection-start-line="291" selection-start-column="16" selection-end-line="291" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Main/FileManger.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="33" column="24" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Main/Exeption.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="27" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="27" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/GUI_Imp/Admin_Imp.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="600">
+              <caret line="44" column="19" selection-start-line="44" selection-start-column="19" selection-end-line="44" selection-end-column="19" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1294#1295#0" expanded="true" />
+                <element signature="e#1322#1323#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -153,6 +149,8 @@
       <find>public</find>
       <find>;</find>
       <find>}</find>
+      <find>showInfoMess</find>
+      <find>Exception</find>
     </findStrings>
     <replaceStrings>
       <replace>ID</replace>
@@ -166,6 +164,8 @@
       <replace>fx:id=</replace>
       <replace>.setText(&quot;&quot;)</replace>
       <replace>.setText(&quot;&quot;);</replace>
+      <replace>showinfoMess</replace>
+      <replace>Exeption</replace>
     </replaceStrings>
   </component>
   <component name="FindManager">
@@ -194,7 +194,6 @@
         <option value="$PROJECT_DIR$/src/GUI_fx/StudentFrame.java" />
         <option value="$PROJECT_DIR$/src/GUI_fx/InstractorFrame.java" />
         <option value="$PROJECT_DIR$/src/GUI_fx/LogIn.java" />
-        <option value="$PROJECT_DIR$/src/Main/FileManger.java" />
         <option value="$PROJECT_DIR$/src/Main/Main.java" />
         <option value="$PROJECT_DIR$/src/GUI_Imp/logIN.java" />
         <option value="$PROJECT_DIR$/src/Main/CourseInformation.java" />
@@ -204,21 +203,23 @@
         <option value="$PROJECT_DIR$/src/GUI_Imp/Admin_Imp.java" />
         <option value="$PROJECT_DIR$/src/GUI_fx/AdminFrame.fxml" />
         <option value="$PROJECT_DIR$/src/GUI_fx/AdminFrame.java" />
+        <option value="$PROJECT_DIR$/src/Main/Exeption.java" />
+        <option value="$PROJECT_DIR$/src/Main/FileManger.java" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="2049" />
-    <option name="width" value="683" />
-    <option name="height" value="768" />
+    <option name="y" value="27" />
+    <option name="width" value="1366" />
+    <option name="height" value="741" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectReloadState">
     <option name="STATE" value="0" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="Scope" currentSubView="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope" proportions="" version="1">
+    <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
@@ -256,34 +257,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope">
-        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
-          <expand>
-            <path>
-              <item name="CoursesManagementSystetem" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="CoursesManagementSystem" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-            </path>
-            <path>
-              <item name="CoursesManagementSystetem" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="CoursesManagementSystem" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="CoursesManagementSystetem" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="CoursesManagementSystem" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="GUI_Imp" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="CoursesManagementSystetem" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="CoursesManagementSystem" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="Main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -318,7 +292,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.AdminFrame">
+  <component name="RunManager" selected="Application.Main">
     <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
       <option name="VMOptions" />
       <option name="arguments" />
@@ -457,8 +431,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.AdminFrame" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.AdminFrame" />
         <item itemvalue="Application.StudentFrame" />
         <item itemvalue="Application.InstractorFrame" />
         <item itemvalue="Application.LogIn" />
@@ -522,9 +496,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1366" y="0" width="1366" height="768" extended-state="6" />
+    <frame x="0" y="27" width="1366" height="741" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" weight="0.15022762" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.15022762" />
       <window_info id="Structure" order="1" weight="0.25341427" />
       <window_info id="Favorites" order="2" weight="0.32852808" />
       <window_info id="Designer" order="3" />
@@ -533,8 +507,8 @@
       <window_info id="Capture Tool" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.09508716" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.22807017" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.094370864" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.2268212" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.60231024" />
@@ -544,7 +518,7 @@
       <window_info anchor="bottom" id="Changes" order="10" />
       <window_info anchor="bottom" id="Profiler" order="11" />
       <window_info anchor="bottom" id="Event Log" order="12" weight="0.32854864" />
-      <window_info anchor="bottom" id="Messages" order="13" weight="0.2931854" />
+      <window_info anchor="bottom" id="Messages" order="13" weight="0.29304636" />
       <window_info anchor="bottom" id="Terminal" order="14" weight="0.15372425" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" sideWeight="0.49905482" weight="0.24962063" />
@@ -713,13 +687,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main/FileManger.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="48" selection-start-line="3" selection-start-column="48" selection-end-line="3" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/GUI_Imp/logIN.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="429">
@@ -805,7 +772,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/GUI_Imp/Admin_Imp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="574">
+        <state relative-caret-position="600">
           <caret line="44" column="19" selection-start-line="44" selection-start-column="19" selection-end-line="44" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -817,8 +784,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main/Courses.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="117" column="9" lean-forward="true" selection-start-line="117" selection-start-column="9" selection-end-line="117" selection-end-column="9" />
+        <state relative-caret-position="195">
+          <caret line="114" column="8" lean-forward="true" selection-start-line="114" selection-start-column="8" selection-end-line="118" selection-end-column="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main/Exeption.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="27" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -827,14 +804,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/GUI_fx/AdminFrame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="360" column="28" lean-forward="true" selection-start-line="360" selection-start-column="28" selection-end-line="360" selection-end-column="28" />
-          <folding>
-            <element signature="e#14306#14307#0" expanded="true" />
-            <element signature="e#14334#14335#0" expanded="true" />
-            <element signature="e#14393#14394#0" expanded="true" />
-            <element signature="e#14423#14424#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="299">
+          <caret line="291" column="42" lean-forward="true" selection-start-line="291" selection-start-column="16" selection-end-line="291" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main/FileManger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="33" column="24" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
         </state>
       </provider>
     </entry>

@@ -166,7 +166,7 @@ public class AdminFrame extends Application {
     public void BtnAddStudentClicked() {
         try {
             if (new Admin_Imp().addStudent(Integer.parseInt(idSAdd.getText()), nameSAdd.getText(), passSAdd.getText(), Integer.parseInt(ageSAdd.getText()), Double.parseDouble(ssnSAdd.getText()))) {
-                new Exeption().showInfoMess("Added Successfully");
+                new Exeption().showinfoMess("Added Successfully");
                 resetAll();
             } else {
                 new Exeption().showErrMess("ID is Taken");
@@ -194,7 +194,7 @@ public class AdminFrame extends Application {
     public void BtnAddInstractorClicked() {
         try {
             if (new Admin_Imp().addInstractor(Integer.parseInt(idIAdd.getText()), nameIAdd.getText(), passIAdd.getText(), Integer.parseInt(ageIAdd.getText()), Double.parseDouble(ssnIAdd.getText()), Double.parseDouble(salaryIAdd.getText()))) {
-                new Exeption().showInfoMess("Added Successfully");
+                new Exeption().showinfoMess("Added Successfully");
                 resetAll();
             } else {
                 new Exeption().showErrMess("ID is Taken");
@@ -224,7 +224,7 @@ public class AdminFrame extends Application {
         try {
             //public Courses(String name, int code, Double price, Double grade, Date startDate, Date endDate) {
             if (new Admin_Imp().addCourse(nameCAdd.getText(), Integer.parseInt(codeCAdd.getText()), Double.parseDouble(priceCAdd.getText()), Double.parseDouble(gradeCAdd.getText()), format.parse(startDateCAdd.getText()), format.parse(endDateCAdd.getText()))) {
-                new Exeption().showInfoMess("Added Successfully");
+                new Exeption().showinfoMess("Added Successfully");
                 resetAll();
             } else {
                 new Exeption().showErrMess("ID is Taken");
@@ -271,7 +271,7 @@ public class AdminFrame extends Application {
                 s.setAge(Integer.parseInt(ageSSearch.getText()));
                 s.setSSN(Double.parseDouble(ssnSSearch.getText()));
                 s.UpdateStudent(Integer.parseInt(idSSearch.getText()));
-                new Exeption().showInfoMess("Updated");
+                new Exeption().showinfoMess("Updated");
                 resetAll();
                 // nameSSearch.setText(s.getName());
             } else {
@@ -285,7 +285,7 @@ public class AdminFrame extends Application {
     public void btnStudentDeleteClicked() {
         try {
             if (new Student().DeleteStudent(Integer.parseInt(idSSearch.getText()))) {
-                new Exeption().showInfoMess("Deleted");
+                new Exeption().showinfoMess("Deleted");
                 resetAll();
                 // nameSSearch.setText(s.getName());
             } else {
@@ -327,7 +327,7 @@ public class AdminFrame extends Application {
                 s.setAge(Integer.parseInt(ageISearch.getText()));
                 s.setSSN(Double.parseDouble(ssnISearch.getText()));
                 s.UpdateInstractor(Integer.parseInt(idISearch.getText()));
-                new Exeption().showInfoMess("Updated");
+                new Exeption().showinfoMess("Updated");
                 resetAll();
                 // nameSSearch.setText(s.getName());
             } else {
@@ -341,7 +341,7 @@ public class AdminFrame extends Application {
     public void btnInstractorDeleteClicked() {
         try {
             if (new Student().DeleteStudent(Integer.parseInt(idISearch.getText()))) {
-                new Exeption().showInfoMess("Deleted");
+                new Exeption().showinfoMess("Deleted");
                 resetAll();
                 // nameSSearch.setText(s.getName());
             } else {
@@ -368,7 +368,7 @@ public class AdminFrame extends Application {
     public void btnCoursesDeleteClicked() {
         try {
             if (new Courses().DeleteCourses(Integer.parseInt(idCSearch.getText()))) {
-                new Exeption().showInfoMess("Deleted");
+                new Exeption().showinfoMess("Deleted");
                 resetAll();
                 // nameSSearch.setText(s.getName());
             } else {

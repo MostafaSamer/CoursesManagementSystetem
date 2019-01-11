@@ -15,7 +15,7 @@ public class FileManger implements Serializable {
             return true;
 
         } catch (IOException e) {
-            new Exception.showErrMess("File Error in FileManger");
+            new Exeption().showErrMess("File Error in FileManger");
         }
 
         return false;
@@ -31,9 +31,9 @@ public class FileManger implements Serializable {
                 Result = Reader.readObject();
             }
         } catch (IOException e) {
-            new Exception.showErrMess("File Error in FileManger");
+            new Exeption().showErrMess("File Error in FileManger");
         }  catch (ClassNotFoundException e) {
-            new Exception.showErrMess("Class Not Found Error in FileManger");
+            new Exeption().showErrMess("Class Not Found Error in FileManger");
         }
 
         return Result;
