@@ -166,13 +166,13 @@ public class AdminFrame extends Application {
     public void BtnAddStudentClicked() {
         try {
             if (new Admin_Imp().addStudent(Integer.parseInt(idSAdd.getText()), nameSAdd.getText(), passSAdd.getText(), Integer.parseInt(ageSAdd.getText()), Double.parseDouble(ssnSAdd.getText()))) {
-                showinfoMess("Added Successfully");
+                new Exeption().showInfoMess("Added Successfully");
                 resetAll();
             } else {
-                showErrMess("ID is Taken");
+                new Exeption().showErrMess("ID is Taken");
             }
         } catch (NumberFormatException e) {
-            showErrMess("ID, Age and SSN must be Numbers");
+            new Exeption().showErrMess("ID, Age and SSN must be Numbers");
         }
     }
     public void BtnCancelStudentClicked() {
@@ -194,13 +194,13 @@ public class AdminFrame extends Application {
     public void BtnAddInstractorClicked() {
         try {
             if (new Admin_Imp().addInstractor(Integer.parseInt(idIAdd.getText()), nameIAdd.getText(), passIAdd.getText(), Integer.parseInt(ageIAdd.getText()), Double.parseDouble(ssnIAdd.getText()), Double.parseDouble(salaryIAdd.getText()))) {
-                showinfoMess("Added Successfully");
+                new Exeption().showInfoMess("Added Successfully");
                 resetAll();
             } else {
-                showErrMess("ID is Taken");
+                new Exeption().showErrMess("ID is Taken");
             }
         } catch (NumberFormatException e) {
-            showErrMess("ID, Age and SSN must be Numbers");
+            new Exeption().showErrMess("ID, Age and SSN must be Numbers");
         }
     }
     public void BtnCancelInstractorClicked() {
@@ -224,15 +224,15 @@ public class AdminFrame extends Application {
         try {
             //public Courses(String name, int code, Double price, Double grade, Date startDate, Date endDate) {
             if (new Admin_Imp().addCourse(nameCAdd.getText(), Integer.parseInt(codeCAdd.getText()), Double.parseDouble(priceCAdd.getText()), Double.parseDouble(gradeCAdd.getText()), format.parse(startDateCAdd.getText()), format.parse(endDateCAdd.getText()))) {
-                showinfoMess("Added Successfully");
+                new Exeption().showInfoMess("Added Successfully");
                 resetAll();
             } else {
-                showErrMess("ID is Taken");
+                new Exeption().showErrMess("ID is Taken");
             }
         } catch (NumberFormatException e) {
-            showErrMess("Price, Grade and Code must be Numbers");
+            new Exeption().showErrMess("Price, Grade and Code must be Numbers");
         } catch (Exception e) {
-            showErrMess("Date Error");
+            new Exeption().showErrMess("Date Error");
         }
     }
     public Button btnCourseCancel;
@@ -256,10 +256,10 @@ public class AdminFrame extends Application {
                 ageSSearch.setText((Integer.toString(s.getAge())));
                // nameSSearch.setText(s.getName());
             } else {
-                showErrMess("User Not Found");
+                new Exeption().showErrMess("User Not Found");
             }
         } catch (NumberFormatException e) {
-            showErrMess("ID must be a Number");
+            new Exeption().showErrMess("ID must be a Number");
         }
     }
     public Button btnStudentUpdate;
@@ -271,28 +271,28 @@ public class AdminFrame extends Application {
                 s.setAge(Integer.parseInt(ageSSearch.getText()));
                 s.setSSN(Double.parseDouble(ssnSSearch.getText()));
                 s.UpdateStudent(Integer.parseInt(idSSearch.getText()));
-                showinfoMess("Updated");
+                new Exeption().showInfoMess("Updated");
                 resetAll();
                 // nameSSearch.setText(s.getName());
             } else {
-                showErrMess("User Not Found");
+                new Exeption().showErrMess("User Not Found");
             }
         } catch (NumberFormatException e) {
-            showErrMess("ID must be a Number");
+            new Exeption().showErrMess("ID must be a Number");
         }
     }
     public Button btnStudentDelete;
     public void btnStudentDeleteClicked() {
         try {
             if (new Student().DeleteStudent(Integer.parseInt(idSSearch.getText()))) {
-                showinfoMess("Deleted");
+                new Exeption().showInfoMess("Deleted");
                 resetAll();
                 // nameSSearch.setText(s.getName());
             } else {
-                showErrMess("User Not Found");
+                new Exeption().showErrMess("User Not Found");
             }
         } catch (NumberFormatException e) {
-            showErrMess("ID must be a Number");
+            new Exeption().showErrMess("ID must be a Number");
         }
     }
 
@@ -312,10 +312,10 @@ public class AdminFrame extends Application {
                 ageISearch.setText((Integer.toString(s.getAge())));
                 // nameSSearch.setText(s.getName());
             } else {
-                showErrMess("User Not Found");
+                new Exeption().showErrMess("User Not Found");
             }
         } catch (NumberFormatException e) {
-            showErrMess("ID must be a Number");
+            new Exeption().showErrMess("ID must be a Number");
         }
     }
     public Button btnInstractorUpdate;
@@ -327,28 +327,28 @@ public class AdminFrame extends Application {
                 s.setAge(Integer.parseInt(ageISearch.getText()));
                 s.setSSN(Double.parseDouble(ssnISearch.getText()));
                 s.UpdateInstractor(Integer.parseInt(idISearch.getText()));
-                showinfoMess("Updated");
+                new Exeption().showInfoMess("Updated");
                 resetAll();
                 // nameSSearch.setText(s.getName());
             } else {
-                showErrMess("User Not Found");
+                new Exeption().showErrMess("User Not Found");
             }
         } catch (NumberFormatException e) {
-            showErrMess("ID must be a Number");
+            new Exeption().showErrMess("ID must be a Number");
         }
     }
     public Button btnInstractorDelete;
     public void btnInstractorDeleteClicked() {
         try {
             if (new Student().DeleteStudent(Integer.parseInt(idISearch.getText()))) {
-                showinfoMess("Deleted");
+                new Exeption().showInfoMess("Deleted");
                 resetAll();
                 // nameSSearch.setText(s.getName());
             } else {
-                showErrMess("User Not Found");
+                new Exeption().showErrMess("User Not Found");
             }
         } catch (NumberFormatException e) {
-            showErrMess("ID must be a Number");
+            new Exeption().showErrMess("ID must be a Number");
         }
     }
     //Search Courses
@@ -368,14 +368,14 @@ public class AdminFrame extends Application {
     public void btnCoursesDeleteClicked() {
         try {
             if (new Courses().DeleteCourses(Integer.parseInt(idCSearch.getText()))) {
-                showinfoMess("Deleted");
+                new Exeption().showInfoMess("Deleted");
                 resetAll();
                 // nameSSearch.setText(s.getName());
             } else {
-                showErrMess("User Not Found");
+                new Exeption().showErrMess("User Not Found");
             }
         } catch (NumberFormatException e) {
-            showErrMess("ID must be a Number");
+            new Exeption().showErrMess("ID must be a Number");
         }
     }
 
@@ -406,6 +406,10 @@ public class AdminFrame extends Application {
         ssnISearch.setText("");
         ageISearch.setText("");
         salaryISearch.setText("");
+        idCSearch.setText("");
+        nameCSearch.setText("");
+        priceCSearch.setText("");
+        gradeCSearch.setText("");
     }
 
     public static void main(String[] args) {
@@ -427,21 +431,9 @@ public class AdminFrame extends Application {
             stage.setResizable(false);
             stage.show();
         } catch (IOException e) {
-            showErrMess("Error some file not found");
+            new Exeption().showErrMess("Error some file not found");
             //System.out.println("File Not Found");
         }
-    }
-
-    public void showErrMess(String mess) {
-        Alert alert = new Alert(Alert.AlertType.ERROR);
-        alert.setHeaderText(mess + " :(");
-        alert.showAndWait();
-    }
-
-    public void showinfoMess(String mess) {
-        Alert alert = new Alert(Alert.AlertType.INFORMATION);
-        alert.setHeaderText(mess + " :)");
-        alert.showAndWait();
     }
 
 }

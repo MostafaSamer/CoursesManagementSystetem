@@ -1,6 +1,6 @@
 package Main;
-import java.io.*;
 
+import java.io.*;
 public class FileManger implements Serializable {
 
     public boolean write(String FilePath, Object data) {
@@ -15,7 +15,7 @@ public class FileManger implements Serializable {
             return true;
 
         } catch (IOException e) {
-            System.out.println("Can't write ...!\n" + e);
+            new Exception.showErrMess("File Error in FileManger");
         }
 
         return false;
@@ -31,9 +31,9 @@ public class FileManger implements Serializable {
                 Result = Reader.readObject();
             }
         } catch (IOException e) {
-            System.out.println(e);
+            new Exception.showErrMess("File Error in FileManger");
         }  catch (ClassNotFoundException e) {
-            e.printStackTrace();
+            new Exception.showErrMess("Class Not Found Error in FileManger");
         }
 
         return Result;
