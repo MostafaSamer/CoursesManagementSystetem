@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="Still Coding" />
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="Still Coding">
+      <change beforePath="$PROJECT_DIR$/src/GUI_Imp/Admin_Imp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI_Imp/Admin_Imp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GUI_fx/AdminFrame.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI_fx/AdminFrame.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GUI_fx/AdminFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI_fx/AdminFrame.java" afterDir="false" />
+    </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -66,12 +70,24 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/GUI_fx/AdminFrame.fxml">
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="1515">
+              <caret line="101" column="55" selection-start-line="101" selection-start-column="55" selection-end-line="101" selection-end-column="55" />
+            </state>
+          </provider>
+          <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/GUI_fx/AdminFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="284" lean-forward="true" selection-start-line="284" selection-end-line="284" />
+            <state relative-caret-position="142">
+              <caret line="321" column="31" lean-forward="true" selection-start-line="321" selection-start-column="31" selection-end-line="321" selection-end-column="31" />
               <folding>
+                <element signature="e#10791#10792#0" expanded="true" />
                 <element signature="e#10819#10820#0" expanded="true" />
+                <element signature="e#10878#10879#0" expanded="true" />
                 <element signature="e#10908#10909#0" expanded="true" />
               </folding>
             </state>
@@ -81,23 +97,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/GUI_Imp/Admin_Imp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="579">
-              <caret line="50" selection-start-line="50" selection-end-line="50" />
+            <state relative-caret-position="459">
+              <caret line="48" selection-start-line="48" selection-end-line="48" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1294#1295#0" expanded="true" />
                 <element signature="e#1322#1323#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/GUI_fx/AdminFrame.fxml">
-          <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="1515">
-              <caret line="101" column="55" selection-start-line="101" selection-start-column="55" selection-end-line="101" selection-end-column="55" />
             </state>
           </provider>
         </entry>
@@ -176,12 +182,12 @@
         <option value="$PROJECT_DIR$/src/Main/Main.java" />
         <option value="$PROJECT_DIR$/src/GUI_Imp/logIN.java" />
         <option value="$PROJECT_DIR$/src/Main/CourseInformation.java" />
-        <option value="$PROJECT_DIR$/src/GUI_Imp/Admin_Imp.java" />
         <option value="$PROJECT_DIR$/src/Main/Student.java" />
-        <option value="$PROJECT_DIR$/src/GUI_fx/AdminFrame.java" />
         <option value="$PROJECT_DIR$/src/Main/Instractor.java" />
         <option value="$PROJECT_DIR$/src/Main/Courses.java" />
         <option value="$PROJECT_DIR$/src/GUI_fx/AdminFrame.fxml" />
+        <option value="$PROJECT_DIR$/src/GUI_Imp/Admin_Imp.java" />
+        <option value="$PROJECT_DIR$/src/GUI_fx/AdminFrame.java" />
       </list>
     </option>
   </component>
@@ -247,7 +253,7 @@
     <property name="MemberChooser.sorted" value="false" />
     <property name="OverrideImplement.combined" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547144803462" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547214907503" />
     <property name="dynamic.classpath" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
@@ -467,6 +473,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1366" y="0" width="1366" height="768" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" weight="0.18512899" />
       <window_info id="Structure" order="1" weight="0.25341427" />
@@ -489,7 +496,7 @@
       <window_info anchor="bottom" id="Profiler" order="11" />
       <window_info anchor="bottom" id="Event Log" order="12" weight="0.32854864" />
       <window_info anchor="bottom" id="Messages" order="13" weight="0.2931854" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="14" visible="true" weight="0.503962" />
+      <window_info anchor="bottom" id="Terminal" order="14" weight="0.15372425" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" sideWeight="0.49905482" weight="0.24962063" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -595,20 +602,20 @@
     <entry file="file://$PROJECT_DIR$/src/GUI_fx/AdminFrmae.fxml" />
     <entry file="file://$PROJECT_DIR$/src/GUI_Imp/Admin.java" />
     <entry file="file://$PROJECT_DIR$/src/GUI_fx/StudentFrame.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
         </state>
       </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/GUI_fx/InstractorFrame.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
         </state>
       </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="jar:///usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/ext/jfxrt.jar!/javafx/application/Application.class">
       <provider selected="true" editor-type-id="text-editor">
@@ -640,12 +647,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/GUI_fx/LogIn.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="14" selection-start-line="14" selection-end-line="14" />
         </state>
       </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main/Main.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -712,18 +719,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/GUI_Imp/Admin_Imp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="579">
-          <caret line="50" selection-start-line="50" selection-end-line="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1294#1295#0" expanded="true" />
-            <element signature="e#1322#1323#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Main/Student.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
@@ -761,22 +756,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/GUI_fx/AdminFrame.java">
+    <entry file="file://$PROJECT_DIR$/src/GUI_fx/AdminFrame.fxml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="1515">
+          <caret line="101" column="55" selection-start-line="101" selection-start-column="55" selection-end-line="101" selection-end-column="55" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GUI_Imp/Admin_Imp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="284" lean-forward="true" selection-start-line="284" selection-end-line="284" />
+        <state relative-caret-position="459">
+          <caret line="48" selection-start-line="48" selection-end-line="48" />
           <folding>
-            <element signature="e#10819#10820#0" expanded="true" />
-            <element signature="e#10908#10909#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#1294#1295#0" expanded="true" />
+            <element signature="e#1322#1323#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/GUI_fx/AdminFrame.fxml">
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="1515">
-          <caret line="101" column="55" selection-start-line="101" selection-start-column="55" selection-end-line="101" selection-end-column="55" />
+    <entry file="file://$PROJECT_DIR$/src/GUI_fx/AdminFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="321" column="31" lean-forward="true" selection-start-line="321" selection-start-column="31" selection-end-line="321" selection-end-column="31" />
+          <folding>
+            <element signature="e#10791#10792#0" expanded="true" />
+            <element signature="e#10819#10820#0" expanded="true" />
+            <element signature="e#10878#10879#0" expanded="true" />
+            <element signature="e#10908#10909#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

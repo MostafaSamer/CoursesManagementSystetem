@@ -283,6 +283,61 @@ public class AdminFrame extends Application {
         }
     }
 
+    //SearchInstractor
+    public TextField idISearch;
+    public TextField nameISearch;
+    public TextField ssnISearch;
+    public TextField ageISearch;
+    public TextField salaryISearch;
+    public Button btnInstractorSearch;
+    public void btnInstractorSearchClicked() {
+        try {
+            if (!(new Admin_Imp().searchStudent(Integer.parseInt(idISearch.getText())).getAge() == 0)) {
+                Instractor s = new Admin_Imp().searchInstractor(Integer.parseInt(idISearch.getText()));
+                nameISearch.setText(s.getName());
+                ssnISearch.setText(Double.toString(s.getSSN()));
+                ageISearch.setText((Integer.toString(s.getAge())));
+                // nameSSearch.setText(s.getName());
+            } else {
+                showErrMess("User Not Found");
+            }
+        } catch (NumberFormatException e) {
+            showErrMess("ID must be a Number");
+        }
+    }
+    public Button btnInstractorUpdate;
+    public void btnInstractorUpdateClicked() {
+        try {
+            if (!(new Admin_Imp().searchInstractor(Integer.parseInt(idISearch.getText())).getAge() == 0)) {
+                Instractor s = new Admin_Imp().searchInstractor(Integer.parseInt(idISearch.getText()));
+                s.setName(nameISearch.getText());
+                s.setAge(Integer.parseInt(ageISearch.getText()));
+                s.setSSN(Double.parseDouble(ssnISearch.getText()));
+                s.UpdateInstractor(Integer.parseInt(idISearch.getText()));
+                showinfoMess("Updated");
+                // nameSSearch.setText(s.getName());
+            } else {
+                showErrMess("User Not Found");
+            }
+        } catch (NumberFormatException e) {
+            showErrMess("ID must be a Number");
+        }
+    }
+    public Button btnInstractorDelete;
+    public void btnInstractorDeleteClicked() {
+        try {
+            if (!(new Admin_Imp().searchStudent(Integer.parseInt(idSSearch.getText())).getAge() == 0)) {
+                new Student().DeleteStudent(Integer.parseInt(idSSearch.getText()));
+                showinfoMess("Deleted");
+                // nameSSearch.setText(s.getName());
+            } else {
+                showErrMess("User Not Found");
+            }
+        } catch (NumberFormatException e) {
+            showErrMess("ID must be a Number");
+        }
+    }
+
     //ToDo Make a Method to empty all textField
     public static void main(String[] args) {
         launch(args);

@@ -358,7 +358,115 @@
                                     <Button fx:id="btnStudentUpdate" layoutX="300.0" layoutY="12.0" mnemonicParsing="false" onAction="#btnStudentUpdateClicked" prefHeight="36.0" prefWidth="100.0" style="-fx-background-color: #201845; -fx-text-fill: #fff;" text="Update" />
                                  </children></Pane>
                            </children></VBox>
-                        <VBox fx:id="searchInstractorBox" prefHeight="310.0" prefWidth="415.0" visible="false" />
+                        <VBox fx:id="searchInstractorBox" prefHeight="310.0" prefWidth="415.0">
+                           <children>
+                              <HBox prefHeight="36.0" prefWidth="415.0">
+                                 <children>
+                                    <TextField fx:id="idISearch" prefHeight="36.0" prefWidth="314.0" promptText="ID">
+                                       <HBox.margin>
+                                          <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+                                       </HBox.margin>
+                                       <padding>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </padding>
+                                    </TextField>
+                                    <Button fx:id="btnInstractorSearch" mnemonicParsing="false" onAction="#btnInstractorSearchClicked" prefHeight="36.0" prefWidth="100.0" style="-fx-background-color: #201845; -fx-text-fill: #fff;" text="Search">
+                                       <HBox.margin>
+                                          <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+                                       </HBox.margin>
+                                       <padding>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </padding>
+                                    </Button>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="36.0" prefWidth="415.0">
+                                 <children>
+                                    <Label prefHeight="36.0" prefWidth="80.0" text="Name">
+                                       <HBox.margin>
+                                          <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+                                       </HBox.margin>
+                                       <padding>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </padding>
+                                    </Label>
+                                    <TextField fx:id="nameISearch" prefHeight="36.0" prefWidth="300.0">
+                                       <HBox.margin>
+                                          <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+                                       </HBox.margin>
+                                       <padding>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </padding>
+                                    </TextField>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="36.0" prefWidth="415.0">
+                                 <children>
+                                    <Label prefHeight="36.0" prefWidth="80.0" text="SSN">
+                                       <HBox.margin>
+                                          <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+                                       </HBox.margin>
+                                       <padding>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </padding>
+                                    </Label>
+                                    <TextField fx:id="ssnISearch" prefWidth="300.0">
+                                       <HBox.margin>
+                                          <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+                                       </HBox.margin>
+                                       <padding>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </padding>
+                                    </TextField>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="36.0" prefWidth="415.0">
+                                 <children>
+                                    <Label prefHeight="36.0" prefWidth="80.0" text="Age">
+                                       <HBox.margin>
+                                          <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+                                       </HBox.margin>
+                                       <padding>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </padding>
+                                    </Label>
+                                    <TextField fx:id="ageISearch" prefWidth="300.0">
+                                       <HBox.margin>
+                                          <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+                                       </HBox.margin>
+                                       <padding>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </padding>
+                                    </TextField>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="36.0" prefWidth="415.0">
+                                 <children>
+                                    <Label prefHeight="36.0" prefWidth="80.0" text="Salary">
+                                       <HBox.margin>
+                                          <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+                                       </HBox.margin>
+                                       <padding>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </padding>
+                                    </Label>
+                                    <TextField fx:id="salaryISearch" prefWidth="300.0">
+                                       <HBox.margin>
+                                          <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+                                       </HBox.margin>
+                                       <padding>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </padding>
+                                    </TextField>
+                                 </children>
+                              </HBox>
+                              <Pane prefHeight="68.0" prefWidth="415.0">
+                                 <children>
+                                    <Button fx:id="btnInstractorDelete" layoutX="175.0" layoutY="12.0" mnemonicParsing="false" onAction="#btnInstractorDeleteClicked" prefHeight="36.0" prefWidth="100.0" style="-fx-background-color: #201845; -fx-text-fill: #fff;" text="Delete" />
+                                    <Button fx:id="btnInstractorUpdate" layoutX="300.0" layoutY="12.0" mnemonicParsing="false" onAction="#btnInstractorUpdateClicked" prefHeight="36.0" prefWidth="100.0" style="-fx-background-color: #201845; -fx-text-fill: #fff;" text="Update" />
+                                 </children>
+                              </Pane>
+                           </children></VBox>
                         <VBox fx:id="searchCoursesBox" prefHeight="310.0" prefWidth="415.0" visible="false" />
                         <VBox fx:id="displayStudentBox" prefHeight="310.0" prefWidth="415.0" visible="false" />
                         <VBox fx:id="displayInstractorBox" prefHeight="310.0" prefWidth="415.0" visible="false" />

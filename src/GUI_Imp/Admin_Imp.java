@@ -47,4 +47,9 @@ public class Admin_Imp {
         return s.searchStudent(ID);
     }
 
+    public Instractor searchInstractor(int ID) {
+        Instractor i = new Instractor();
+        return i.searchInstractor(ID);
+    }
+
 }
