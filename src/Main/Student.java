@@ -48,8 +48,7 @@ public class Student extends Person implements Serializable {
         LoadFromFile();
         if (student.get(this.getID()) == null) {
             student.put(this.getID(), this);
-            CommitToFile();
-            return true;
+            return CommitToFile();
         }
         return false;
 
